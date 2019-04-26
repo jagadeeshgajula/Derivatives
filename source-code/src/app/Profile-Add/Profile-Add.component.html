@@ -1,0 +1,87 @@
+<div class="row content-section">
+    <div class="col-sm-3"><br>
+        <div><label>LoginName</label></div><br><br>
+        <div><label>First Name</label></div><br><br>
+        <div><label>Last Name</label></div><br><br>
+        <div><label>Password</label></div><br><br>
+        <div><label>SwapDefault</label></div><br><br>
+        <div><label>SwoDefault</label></div><br><br>
+        <div><label>PVAutoCalc</label></div><br><br>
+        <div><label>Threshold PV</label></div><br><br>
+        <div><label>Business</label></div><br><br>
+        <div><label>LastModified</label></div><br><br>
+        <div><label>LastVerified</label></div>
+    </div>
+    <div class="col-sm-3"><br>
+        <div class="col-sm-9"><input type="text" name="LoginName" class="form-control" value={{model.txtLoginName}}></div><br><br><br>
+        <div class="col-sm-9"><input type="text" name="FirstName" class="form-control" value={{model.txtFirstName}}></div><br><br><br>
+        <div class="col-sm-9"><input type="text" name="LastName" class="form-control" value={{model.txtLastName}}></div><br><br><br><br>
+        <div class="col-sm-9"><input type="text" name="Password" class="form-control" value={{model.txtPassword}}></div><br><br><br>
+        <div class="col-sm-9"> <input type="text" name="SwapDefault" class="form-control" value={{model.txtSwapTicketDefaultDeal}}></div><br><br><br><br>
+        <div class="col-sm-9"> <input type="text" name="SWODefault" class="form-control"  value={{model.txtSwapOptionDefaultDeal}}></div><br><br><br>
+        <div class="col-sm-9" name="PVAutoCalc">
+            <select class="form-control">
+                <option selected *ngFor="let PVAutoCalc of model.cmbPVAutoCalc">{{PVAutoCalc}}</option>
+            </select>
+        </div><br><br><br><br>
+        <div class="col-sm-9"><input type="text" name="Threshold PV" class="form-control"  value={{model.txtThresholdPv}}></div><br><br><br>
+        <div class="col-sm-9" name="Business">
+            <select class="form-control">
+                <option>{{model.cmbBusiness}}</option>
+            </select>
+        </div><br><br><br><br>
+        <div class="col-sm-9"><input type="text" name="LastModified" class="form-control"  value={{model.txtLastModified}}></div><br><br><br>
+        <div class="col-sm-9"> <input type="text" name="LastVerified" class="form-control"  value={{model.txtLastVerified}}></div>
+    </div>
+    <div class="vl"></div>
+    <div class="col-sm-3"> <br>
+        <div><label>Access Type</label></div><br><br>
+        <div><label>Status</label></div><br><br>
+        <div><label>Role</label></div><br><br>
+        <div><label>Domain</label></div><br><br>
+        <div><label>FraDefault</label></div><br><br>
+        <div><label>CapFloorDefault</label></div><br><br>
+        <div><label>Administrator</label></div><br><br>
+        <div><label>Department</label></div><br><br>
+        <div><label>LastModifiedBy</label></div><br><br>
+        <div><label>LastVerifiedBy</label></div>
+    </div>
+    <div class="col-sm-3"><br>
+        <div class="col-sm-9" name="Access Type">
+                <select class="form-control">
+                    <option>{{model.cmbAccessType}}</option>
+                </select>
+        </div><br><br><br>
+        <div class="col-sm-9"><input type="text" name="Status" class="form-control" value={{model.txtStatus}}></div><br><br><br>
+        <div class="col-sm-9" name="Role">
+                <select class="form-control">
+                    <option>{{model.cmbRole}}</option>
+                </select>
+        </div><br><br><br><br>
+        <div class="col-sm-9" name="Domain">
+                <select class="form-control">
+                    <option>{{model.cmbDomain}}</option>
+                </select>
+        </div><br><br><br>
+        <div class="col-sm-9"> <input type="text" name="FraDefault" class="form-control"  value={{model.txtFraDefaultDeal}}></div><br><br><br><br>
+        <div class="col-sm-9"> <input type="text" name="CapFloorDefault" class="form-control"  value={{model.txtCapFloorDefaultDeal}}></div><br><br><br><br>
+        <div class="col-sm-9" name="Administrator">
+                <select class="form-control">
+                        <option selected *ngFor="let Administrator of model.cmbAdministrator">{{Administrator}}</option>
+                </select>
+        </div><br><br><br>
+        <div class="col-sm-9" name="Department">
+                <select class="form-control">
+                        <option selected *ngFor="let Department of model.cmbDepartment">{{Department}}</option>
+                </select>
+        </div><br><br><br>
+        <div class="col-sm-9"><input type="text" name="LastModifiedBy" class="form-control"  value={{model.txtLastModifiedBy}}></div><br><br><br><br>
+        <div class="col-sm-9"><input type="text" name="LastVerifiedBy" class="form-control" value={{model.txtLastVerifiedBy}}></div>
+    </div>          
+        <div class="col-sm-12"> <br><br><br>
+        <div class=" col-sm-6 text-right"><div class=" col-sm-8"></div><button type="button" class="btn btn-primary col-sm-2">Save</button></div>
+        <div class=" col-sm-6 text-left"><div class=" col-sm-1"></div><button type="button" class="btn btn-primary col-sm-2">Cancel</button></div>
+        </div>
+     </div>
+
+    <router-outlet></router-outlet>

@@ -1,0 +1,42 @@
+<ProfileModify>
+<UserName> 
+<u1>ramya</u1>
+<u2>suchitra</u2>
+<u3>archana</u3>
+<u4>firdose</u4>
+<u5>Ram</u5>
+</UserName>
+<LoginName>Ram Bollu</LoginName>
+<FirstName>Ram</FirstName>
+<LastName>Bollu</LastName>
+<Password>vishist</Password>
+<SwapTicketDefaultDeals>Ram.Swap.Default.xml</SwapTicketDefaultDeals>
+<SwapOptionDefaultDeal>Ram.Swaption.Default.xml</SwapOptionDefaultDeal>
+<PVAutoCalc>
+<pvyes>Yes</pvyes>
+<pvno>No</pvno>
+</PVAutoCalc>
+<ThresholdPv>120000 </ThresholdPv>
+<Business>Bonds</Business>
+<ModifiedTimeStamp>05/02/2012 10:10PM</ModifiedTimeStamp>
+<VerifiedTimeStamp>05/02/2012 10:20PM</VerifiedTimeStamp>
+<AccessType>Approver</AccessType>
+<Status>Active</Status>
+<Role>Sales Person</Role>
+<Domain>EUR</Domain>
+<FraDefaultDeal>FRA.Default.xml</FraDefaultDeal>
+<CapFloorDefaultDeal>CAPFLOOR.Default.xml</CapFloorDefaultDeal>
+<Administrator>
+<adminyes>Yes</adminyes>
+<adminno>No</adminno>
+</Administrator>
+<Department>
+<dep1>Front Office</dep1>
+<dep2>Back Office</dep2>
+<dep3>Middle Office</dep3>
+<dep4>Technology</dep4>
+</Department>
+<LastModifiedBy>Hari B</LastModifiedBy>
+<LastVerifiedBy>Hari B</LastVerifiedBy>
+</ProfileModify>
+
