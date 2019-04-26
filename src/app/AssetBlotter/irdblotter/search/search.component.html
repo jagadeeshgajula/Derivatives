@@ -1,0 +1,183 @@
+<div *ngIf="obj">
+  
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6" style="border-right:2px solid black">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>Product</label>
+              <select name="productList" class="form-control">
+                <option></option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>FirmAccount</label>
+              <select name="cmbFirmAccount" class="form-control" >
+                <option *ngFor="let firmAccount of obj.List.FirmAccount.id">{{firmAccount}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Effective Date</label>
+              <input type="date" name="txtEffectiveDate" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Trade Date</label>
+              <input type="date" name="txtTradeDate" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Sales Person</label>
+              <select name="cmbSalesPerson" class="form-control">
+                <option *ngFor="let salesPerson of obj.List.SalesPerson.Id">{{salesPerson}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Customer</label>
+              <select name="cmbCustomerAccount" class="form-control">
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>Trade Status</label>
+              <select name="cmbTradeStatus" class="form-control" > 
+                
+                <option *ngFor="let tradeStatus of obj.List.TradeStatus.id">{{tradeStatus}}</option>
+              
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Broker</label>
+              <select name="cmbBroker" class="form-control">
+                <option *ngFor="let broker of obj.List.Broker.Id">{{broker}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Termination Date</label>
+              <input type="date" name="txtTerminationDate" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Trader</label>
+              <select name="cmbTrader" class="form-control">
+                <option *ngFor="let trader of obj.List.Trader.Id">{{trader}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Currency</label>
+              <select name="cmbCurrency" class="form-control">
+                <option *ngFor="let currency of obj.List.Currency.Id">{{currency}}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Long Name</label>
+              <select name="cmbLongName" class="form-control">
+                <option *ngFor="let longName of obj.List.LongName.Id">{{longName}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="form-group">
+              <label>Trade Type</label>
+              <select name="cmbTradeType" class="form-control">
+                <option *ngFor="let tradeType of obj.List.TradeType.id">{{tradeType}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Legal Entity</label>
+              <select name="cmbLegalEntity" class="form-control">
+                <option *ngFor="let legalEntity of obj.List.LegalEntity.Id">{{legalEntity}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Match Status</label>
+              <select name="cmbMatchStatus" class="form-control">
+                <option *ngFor="let matchStatus of obj.List.MatchStatus.Id">{{matchStatus}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>External System</label>
+              <select name="cmbExternalSystem" class="form-control">
+                <option *ngFor="let externalSystem of obj.List.ExternalSystem[1].Id">{{externalSystem}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Latest Verified</label>
+              <input type="date" name="txtLatestVerified" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Last Modified By</label>
+              <input type="text" name="txtLastModifiedBy" class="form-control">
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>Trade Version</label>
+              <input type="text" name="txtTradeVersion" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Location</label>
+              <select name="cmbLocation" class="form-control">
+                <option *ngFor="let location of obj.List.Location.Id" >{{location}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Flow Status</label>
+              <select name="cmbFlowStatus" class="form-control">
+                <option *ngFor="let flowStatus of obj.List.FlowStatus.id">{{flowStatus}}</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Early Term Date</label>
+              <input type="date" name="txtEarlyTermDate" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Last Modified</label>
+              <input type="text" name="txtLatestModified" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Latest Verified By</label>
+              <input type="text" name="txtLatesVerifiedBy" class="form-control">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <a routerLink="swap" routerLinkActive="active" class="btn btn-primary gap active">Swap</a>
+    <a routerLink="swapOption" routerLinkActive="active" class="btn btn-primary gap">Swap Option</a>
+    <a routerLink="fra" routerLinkActive="active" class="btn btn-primary gap">Fra</a>
+    <a routerLink="cap-floor" routerLinkActive="active" class="btn btn-primary gap">Cap/Floor</a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

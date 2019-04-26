@@ -1,0 +1,245 @@
+<div *ngIf="obj">
+<div class="container-fluid">
+ 
+  <div class="row">
+    <div class="col-lg-12" style="padding-left: 46%">
+      <label style="border-right: 5px solid black">Pay  &nbsp;</label><label>&nbsp;  Rec</label>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-lg-5">
+
+      <div class="row">
+        <div class="col-lg-2">
+          <label>Sub Product</label>
+        </div>
+        <div class="col-lg-2">
+          <select name="cmbSubProductSwap" class="form-control">
+            <option *ngFor="let subProduct of obj.List.SwapSubProductType.Id">{{subProduct}}</option>
+          </select>
+        </div>
+
+        <div class="col-lg-4">
+          <select name="cmbPayCurrency" class="form-control">
+            <option *ngFor="let currency of obj.List.Currency.Id">{{currency}}</option>
+          </select>
+        </div>
+
+        <div class="col-lg-4">
+          <select name="cmbPayLegType" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <input type="text" name="txtPayNotional" class="form-control">
+        </div>
+        <div class="col-lg-6">
+          <select name="cmbPayAccrualFreq" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <select name="cmbPayPayFreq" class="form-control">
+            <option></option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <select name="cmbPayResetFreq" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <select name="cmbPayAmortType" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <select name="cmbPayCompounding" class="form-control">
+            <option></option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <select name="cmbPayDiscountCurve" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6">
+            <input type="text" name="txtPayFixedQuote" class="form-control">
+          </div>
+          <div class="col-lg-6">
+            <select name="cmbPayDayCount" class="form-control">
+              <option></option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <input type="text" name="cmbPayMarketIndex" class="form-control">
+            </div>
+            
+          </div>
+
+          <button class="btn btn-success"  style="margin-top: 20px;">Clear</button>
+    </div>
+
+
+
+    <div class="col-lg-2">
+      <br>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label>Currency/Leg Type</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label>National/AccrualFreq</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label>Pay Freq/Rest Freq</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label >Amort Type</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label>Compounding/Discount</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label>CurveFixedQuote/DayCount</label>
+            </div>
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label>Market Index</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <select name="cmbRecCurrency" class="form-control">
+            <option></option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <select name="cmbRecLegType" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <input type="text" name="txtRecNotional" class="form-control">
+        </div>
+        <div class="col-lg-6">
+          <select name="cmbRecAccrualFreq" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <select name="cmbRecPayFreq" class="form-control">
+            <option></option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <select name="cmbRecResetFreq" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <select name="cmbRecAmortType" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <select name="cmbRecCompounding" class="form-control">
+            <option></option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <select name="cmbRecDiscountCurve" class="form-control">
+            <option></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6">
+            <input type="text" name="txtRecFixedQuote" class="form-control">
+          </div>
+          <div class="col-lg-6">
+            <select name="cmbRecDayCount" class="form-control">
+              <option></option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <input type="text" name="cmbRecMarketIndex" class="form-control">
+            </div>
+            
+          </div>
+          
+          <button class="btn btn-success" style="margin-top: 20px;">Search</button>
+    </div>
+    
+  </div>
+</div>
+
+</div>

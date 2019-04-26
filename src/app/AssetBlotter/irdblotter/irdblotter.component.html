@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="form-group">
+    <table>
+      <tr>
+        <td style="padding-left: 10px;padding-top: 15px;"><label>Trade Identifier</label></td>
+        <td style="padding-left: 15px;"><input type="text" name="txtTradeIdentifier" class="form-control"></td>
+        <td style="padding-left: 15px;padding-top: 15px;"><button class="btn btn-primary">GO</button></td>
+        <td style="padding-left: 15px;padding-top: 15px;"><label>IRDBlotter</label></td>
+        <td style="padding-left: 15px;width: 200px"><select name="cmbIRDBlotterNames" class="form-control">
+            <option></option>
+          </select>
+        </td>
+        <td style="padding-left: 10px;padding-top: 15px; "><input type="radio" name="rbTrade" value="Pricing"><label>Pricing</label></td>
+        <td style="padding-left: 8px;padding-top: 15px; "> <input  type="radio" name="rbTrade" value="TradeCapture"><label>Trade Capture</label></td>
+        <td style="padding-left: 35px;padding-top: 15px;"><label>Market</label></td>
+        <td style="padding-left: 15px;"><select name="cmbMarket" class="form-control">
+            <option>Live</option>
+            <option>EndOfDay</option>
+            <option>Historic</option>
+          </select>
+        </td>
+        <td style="padding-left: 15px;padding-top: 15px;"><label>close</label></td>
+        <td style="padding-left: 15px;"><input name="txtClose" type="date" class="form-control"></td>
+      </tr>
+    </table>
+  </div>
+  <a routerLink="search" routerLinkActive="active" class="btn btn-primary gap">Search</a>
+  <a routerLink="results" routerLinkActive="active" class="btn btn-warning gap">Results</a>
+  <router-outlet></router-outlet>
+</div>
