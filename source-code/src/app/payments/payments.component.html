@@ -1,0 +1,561 @@
+
+
+<div class="form-group ">
+ 
+    <div class="row">
+        <div class="row">
+       <div [ngClass]="['form-group']" >
+          <br>
+          <label class="control-label col-sm-3 contorl-align-label contorl-align-text">DayCount</label>
+            
+        <div class="col-sm-2"> 
+          <select class="form-control" >
+              <option *ngFor="let days of model.cmbDayCount.dc">{{days}}</option>
+          </select>
+       
+        </div>
+       </div>
+      </div>
+             
+
+       <div class="row">
+          <div [ngClass]="['form-group']">
+             
+             <label class="control-label col-sm-3 contorl-align-label">DiscountCurve</label>
+               
+           <div class="col-sm-2">
+            <select class="form-control">
+              <option *ngFor="let disc of model.cmbDiscountCurve.disC">{{disc}}</option>
+             
+            </select>
+           </div>
+          </div>
+       
+      </div>
+
+
+    <div class="row">
+       <div [ngClass]="['form-group']">
+             <label class="control-label col-sm-3 contorl-align-label">PayBusDay/Calendars</label>
+             <div class="col-sm-5"> 
+               <div class="col-sm-3">
+                <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+                    <option *ngFor="let pbus of model.cmbPayBusDay.pbd">{{pbus}}</option>
+               </select>
+              </div>
+              <div class="col-sm-8" >
+               <select  class="form-control" [ngStyle]="{'margin-left.px':'-23'}" >
+                  <option>{{model.cntPayCalendars}}</option>
+              </select>
+            </div>        
+         </div>
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row">
+          <div [ngClass]="['form-group']">
+             
+             <label class="control-label col-sm-3 contorl-align-label">PayFreq/Marching</label>
+             
+             <div class="col-sm-5"> 
+                <div class="col-sm-5">
+                 <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+                    <!-- <option>SemiAnnual</option>
+                    <option>Annual</option>
+                    <option>Once</option>
+                    <option>FourthMonthly</option>
+                    <option>Quarterly</option>
+                    <option>Bimonthly</option>
+                    <option>Monthly</option>
+                    <option>Biweekly</option>
+                    <option>Weekly</option>
+                    <option>Daily</option> -->
+                     <option>{{model.cmbPayFreq}}</option>
+                </select>
+               </div>
+               <div class="col-sm-4" >
+                <select  class="form-control" [ngStyle]="{'margin-left.px':'-23'}" >
+                  <!--     <option>DofW</option>
+                     <option>DofM</option>
+                     <option>Fwd</option>
+                     <option>Eom</option>
+                     <option>Bkwd</option>
+                     <option>IMM</option>
+                     <option>ED</option>  -->
+                   <option>{{model.cmbPayMarching}}</option>
+               </select>
+             </div>        
+            </div>
+          </div>
+       
+      </div>
+
+
+      <div class="row">
+          <div [ngClass]="['form-group']">
+             
+             <label class="control-label col-sm-3 contorl-align-label">PaymentConvention/Currency</label>
+               
+           <div class="col-sm-8">
+             <div class="form-inline">
+                   <select class="form-control">
+                    <!-- <option>IN_ADVANCE</option>
+                    <option>IN_ARREARS</option>  -->
+                    <option>{{model.cmbPaymentConvention}}</option>
+                    </select>
+                    
+                    <select  class="form-control" [ngStyle]="{'margin-left.px':'16'}">
+                    <option>{{model.cmbPaymentConversionCurrency}}</option>
+                    <option></option>
+                    </select>
+           </div>
+           </div>
+          </div>
+       
+      </div>
+
+
+
+      <div class="row">
+          <div [ngClass]="['form-group']">
+             
+             <label class="control-label col-sm-3 contorl-align-label">PaymentConversionIndex/Lag</label>
+               
+             <div class="col-sm-5"> 
+                <div class="col-sm-5">
+                 <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+                    <!-- <option>SemiAnnual</option>
+                    <option>Annual</option>
+                    <option>Once</option>
+                    <option>FourthMonthly</option>
+                    <option>Quarterly</option>
+                    <option>Bimonthly</option>
+                    <option>Monthly</option>
+                    <option>Biweekly</option>
+                    <option>Weekly</option>
+                    <option>Daily</option> -->
+                     <option>{{model.cmbPaymentConversionIndex}}</option>
+                </select>
+               </div>
+               <div class="col-sm-2" >
+                  <input type="text" value={{model.txtPaymentConversionLag}} class="form-control" [ngStyle]="{'margin-left.px':'-26'}">
+             </div>        
+            </div>
+          </div>
+       
+      </div>
+
+
+
+      <div class="row">
+          <div [ngClass]="['form-group']">
+             
+             <label class="control-label col-sm-3 contorl-align-label">PayRollDay/RollWeek/Lag </label>
+               
+             <div class="col-sm-5"> 
+                <div class="col-sm-3">
+                    <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+                        <option>{{model.cmbPayRollDay}}</option>
+                        </select>
+
+               </div>
+               <div class="col-sm-5" >
+                  <select class="form-control" [ngStyle]="{'margin-left.px':'-26'}">
+                      <!--  <option>NO_WEEKDAY</option>
+                      <option>MONDAY</option>
+                      <option>TUESDAY</option>
+                     <option>WEDNESDAY</option>
+                     <option>THURSDAY</option>
+                     <option>FRIDAY</option>
+                     <option>SATURDAY</option>
+                     <option>SUNDAY</option>  -->
+                     <option>{{model.cmbPayRollWeek}}</option>
+                     
+                     </select>
+             </div>        
+             <div class="col-sm-3">
+                <input type="text" value={{model.txtPayLag}} class="form-control" [ngStyle]="{'margin-left.px':'-38'}" >
+             </div>
+            </div>
+
+
+           
+          </div>
+       
+      </div>
+      <br>
+      <h1>Schedule</h1>
+      <div class="row">
+            
+        <br>
+
+         <div [ngClass]="['form-group']" >
+            <br>
+            <label class="control-label col-sm-3 contorl-align-label contorl-align-text">PV/Currency</label>
+              <div class="col-sm-5">
+          <div class="col-sm-7"> 
+            <input class="form-control" type="text"  value={{model.txtPV}} [ngStyle]="{'margin-left.px':'-16'}">
+          </div>
+          <div class="col-sm-3">
+              <select class="form-control col-sm-4" [ngStyle]="{'margin-left.px':'-19'}">
+                <option>{{model.cmbPVCurrency}}</option>
+              </select>
+          </div>
+        </div>
+            </div>
+            </div>
+
+
+        <div class="row">
+            
+           <div [ngClass]="['form-group']" >
+              <br>
+              <label class="control-label col-sm-3 contorl-align-label contorl-align-text">Parallel Delta/Curve</label>
+                <div class="col-sm-5">
+            <div class="col-sm-5"> 
+              <input class="form-control" type="text" value={{model.txtRecParallelDelta}} [ngStyle]="{'margin-left.px':'-16'}">
+            </div>
+            <div class="col-sm-4">
+                <select class="form-control " [ngStyle]="{'margin-left.px':'-19'}" >
+                  <option>{{model.cmbCurvePnl}}</option>
+                </select>
+            </div>
+            </div>
+           
+          </div>
+      
+      
+
+   <!--  <div class="row">
+        <div [ngClass]="['form-group']" >
+           <br>
+           <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >DayCount
+             </label>
+             
+         <div class="col-sm-8">
+           <div class="form-inline">
+             
+          <select class="form-control">
+          <option>Act/360</option>
+          <option>Act/365F</option>
+          <option>Act/365.25</option>
+          <option>Act/ActISDA</option>
+          <option>Act/ActISDA 251</option>
+          <option>Equal</option>
+          <option>Bus/252</option>
+          <option>Bus/360</option>
+          <option>Full</option>
+          <option>30B/360</option>
+          <option>30E/360</option>
+          <option>ISDA30E/360</option>
+          <option>30I/360</option>
+          <option>30S/360</option> 
+          <option>{{model.cmbDayCount}}</option>
+          <option></option>
+        </select>
+            
+         </div>
+         </div>
+        </div>
+       </div>
+
+
+       ------
+
+    <div class="form-group col-sm-8">
+     <br>
+      <div class="form-group col-sm-12">
+        <label class="control-label">DayCount</label>
+      </div>
+    </div>
+    <div class="form-group col-sm-6">
+
+      <div class="form-group col-sm-7">
+        <select class="form-control">
+         <option>Act/360</option>
+          <option>Act/365F</option>
+          <option>Act/365.25</option>
+          <option>Act/ActISDA</option>
+          <option>Act/ActISDA 251</option>
+          <option>Equal</option>
+          <option>Bus/252</option>
+          <option>Bus/360</option>
+          <option>Full</option>
+          <option>30B/360</option>
+          <option>30E/360</option>
+          <option>ISDA30E/360</option>
+          <option>30I/360</option>
+          <option>30S/360</option> 
+          <option>{{model.cmbDayCount}}</option>
+          <option></option>
+        </select>
+      </div>
+      <div class="form-group col-sm-5">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+
+    <div class="form-group col-sm-6">
+        
+        <div class="form-group col-sm-12">
+          
+          <label class="control-label">DiscountCurve</label>
+        </div>
+      </div>
+      <div class="form-group col-sm-6">
+       <div class="form-group col-sm-7">
+          <select class="form-control">
+            <option>{{model.cmbDiscountCurve}}</option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+
+          </select>
+       </div>
+       <div class="form-group col-sm-5">
+       </div>
+ 
+      </div>
+   
+
+      
+        <div class="form-group col-sm-6">
+                         <div class="form-group col-sm-12">
+               <label class="control-label">PayBusDay/Calendars</label>
+             </div>
+           </div>
+           <div class="form-group col-sm-6">
+             <div class="form-group col-sm-6">
+              <select class="form-control">
+                <option>MOD</option>
+                <option>FOL</option>
+                <option>PRE</option>
+                <option>NONE</option> 
+                <option>{{model.cmbPayBusDay}}</option>
+              </select>
+             </div>
+             <div class="form-group col-sm-6">
+               <select  class="form-control">
+                 <option>{{model.cntPayCalendars}}</option>
+                 <option></option>
+                 <option></option>
+                 <option></option>
+               </select>
+             </div>
+             <div class="clearfix"></div>
+           </div>
+
+
+
+           <div class="form-group col-sm-6">
+              <div class="form-group col-sm-12">
+    <label class="control-label">PayFreq/Marching</label>
+  </div>
+</div>
+<div class="form-group col-sm-6">
+  <div class="form-group col-sm-8">
+   <select class="form-control">
+     <option>SemiAnnual</option>
+     <option>Annual</option>
+     <option>Once</option>
+     <option>FourthMonthly</option>
+     <option>Quarterly</option>
+     <option>Bimonthly</option>
+     <option>Monthly</option>
+     <option>Biweekly</option>
+     <option>Weekly</option>
+     <option>Daily</option>
+    <option>{{model.cmbPayFreq}}</option>
+    
+
+   </select>
+  </div>
+  <div class="form-group col-sm-4">
+    <select  class="form-control">
+       <option>DofW</option>
+      <option>DofM</option>
+      <option>Fwd</option>
+      <option>Eom</option>
+      <option>Bkwd</option>
+      <option>IMM</option>
+      <option>ED</option> 
+      <option>{{model.cmbPayMarching}}</option>
+    </select>
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-12">
+<label class="control-label">PaymentConvention/Currency</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-8">
+<select class="form-control">
+<option>IN_ADVANCE</option>
+<option>IN_ARREARS</option> 
+<option>{{model.cmbPaymentConvention}}</option>
+
+</select>
+</div>
+<div class="form-group col-sm-4">
+<select  class="form-control">
+<option>{{model.cmbPaymentConversionCurrency}}</option>
+<option></option>
+
+</select>
+</div>
+<div class="clearfix"></div>
+</div>
+          
+
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-12">
+<label class="control-label">PaymentConversionIndex/Lag</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-8">
+<select class="form-control">
+<option>{{model.cmbPaymentConversionIndex}}</option>
+<option></option>
+</select>
+</div>
+<div class="form-group col-sm-4">
+<input type="text" value={{model.txtPaymentConversionLag}} class="form-control">
+</div>
+<div class="clearfix"></div>
+</div>
+
+    
+
+
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-12">
+<label class="control-label">PayRollDay/RollWeek/Lag</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-3">
+<select class="form-control">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+
+<option>{{model.cmbPayRollDay}}</option>
+</select>
+</div>
+<div class="form-group col-sm-7">
+<select class="form-control">
+  <option>NO_WEEKDAY</option>
+ <option>MONDAY</option>
+ <option>TUESDAY</option>
+<option>WEDNESDAY</option>
+<option>THURSDAY</option>
+<option>FRIDAY</option>
+<option>SATURDAY</option>
+<option>SUNDAY</option> 
+<option>{{model.cmbPayRollWeek}}</option>
+
+</select>
+</div>
+<div class="form-group col-sm-2">
+  <input type="text" value={{model.txtPayLag}} class="form-control">
+</div>
+<div class="clearfix"></div>
+</div> 
+
+
+
+<div class="form-group col-sm-6">
+  <hr>
+  <div class="form-group col-sm-12">
+    <label class="control-label">PV/Currency</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-5">
+<input type="text" class="form-control"/> 
+</div>
+<div class="form-group col-sm-3">
+<select class="form-control">
+<option></option>
+<option></option>
+<option></option>
+       
+</select> 
+</div>
+
+<div class="clearfix"></div>
+<hr>
+</div>
+
+
+
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-12">
+      <label class="control-label">Parallel Delta/Curve</label>
+  </div>
+  </div>
+  <div class="form-group col-sm-6">
+  <div class="form-group col-sm-4">
+ <input class="form-control" type="text"/> 
+  </div>
+  <div class="form-group col-sm-6">
+  <select class="form-control">
+  <option></option>
+  <option></option>
+   <option></option>      
+  </select> 
+  </div>
+  
+  <div class="clearfix"></div>
+  <hr>
+  </div> -->
+  
+
+
+
+</div>
+
+
+

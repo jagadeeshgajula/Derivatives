@@ -1,0 +1,13 @@
+.form-control{ border-radius:0px;size: 0px}
+.contorl-align-label{
+    margin-left:25px;
+    margin-top:12px;
+    text-align:left;
+  }
+ 
+  .header{
+    margin-left: 20px;
+  }
+  label{
+    font-weight: bold;
+  }
