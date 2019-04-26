@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+body{background-color:#d3d3d3; font-family: 'Roboto', sans-serif; font-weight:400; position:relative; height: 100%;}
+label {padding: 1px 1px 1px 0; display: inline-block; font-size:16px; font-weight:400;}	
+input.form-control,
+select.form-control,
+textarea.form-control
+	{   
+		background-color:#ffffff;
+		margin-top: 10px;
+		border-radius: 20px;
+	    padding-left: 10px;
+	}
+.navbar-header .navbar-brand {color:#000;
+                 font-size:16pt;
+                 font-weight:600; }
+
+.navbar-inverse{
+background-color: #698597;
+font-size:15pt;
+font-weight:500;
+color:#000;
+font-family: 'Roboto';
+margin-bottom:5px;
+}
+
+.navbar-inverse .navbar-nav li a{color:#000}
+.left-nav,
+.right-nav{background-color:#698597; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; width:100%;height:350vh;}
+.left-nav ul,
+.right-nav ul{list-style:none; margin-top:30px; padding:0;}
+.left-nav ul li{line-height:62px; margin-top:10px;text-align:center;background-color: transparent;-webkit-transition: 0.50s; /* Safari */ transition: 0.50s;}
+.left-nav ul li a{text-decoration:none; color:#000;font-family: 'Roboto', sans-serif; font-weight:500; font-size:15pt; display:block; text-transform:capitalize;}
+.left-nav ul li a span{display:inline-block; width:35px; text-align:left;}
+
+.left-nav ul li:hover{background-color:  rgb(109, 150, 173)}
+.navbar ul li:hover{background-color:  rgb(109, 150, 173)}
+/* .navbar > ul > li{margin-left: 10px} */
+.right-nav ul li{line-height:62px; background-color: transparent; border-bottom:solid 2px #0d172e;-webkit-transition:  0.50s; /* Safari */ transition: 0.50s;}
+
+label{font-weight: 500;color: #000 }
+
+
+.active {
+  background-color: rgb(109, 150, 173);
+  color: #000;
+}
+
+

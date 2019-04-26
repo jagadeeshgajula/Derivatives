@@ -1,0 +1,128 @@
+ <swapticket>
+ <Currency>
+ <Currency1>AED</Currency1>
+ <Currency2>ATS</Currency2>
+ <Currency3>AUD</Currency3>
+ <Currency4>BEF</Currency4>
+ <Currency5>BGN</Currency5>
+ <Currency6>BHD</Currency6>
+ <Currency7>BRL</Currency7>
+ <Currency8>BWP</Currency8>
+ <Currency9>CAD</Currency9>
+ <Currency10>DEM</Currency10>
+ <Currency11>EGP</Currency11>
+ <Currency12>EUR</Currency12>
+ <Currency13>FIM</Currency13>
+ <Currency14>GBP</Currency14>
+ <Currency15>INR</Currency15>
+ </Currency>
+ <Tenor>3</Tenor>
+ <Notional>10000000</Notional>
+ <NotionalExchange>
+ <NE1>START</NE1>
+ <NE2>ALL</NE2>
+ <NE3>ALLNOEND</NE3>
+ <NE4>BOTH</NE4>
+ <NE5>ALLNOSTART</NE5>
+ <NE6>ALLNOSTARTEND</NE6>
+ <NE7>END</NE7>
+ <NE8>NONE</NE8>
+ </NotionalExchange>
+ <StartDate>22/02/2013</StartDate>
+ <StartStub>22/02/2013</StartStub>
+<StartRoll><sr1>Yes</sr1><sr2>No</sr2></StartRoll>
+<EndRoll><er1>Yes</er1><er2>No</er2></EndRoll>
+ <EndDate>22/02/2016</EndDate>
+ <EndStub>22/02/2016</EndStub>
+<StartStubMRate>-1</StartStubMRate>
+<EndStubMRate>-1</EndStubMRate>
+<FixedQuote>1.25</FixedQuote>
+<FrontStubManualRate>-1</FrontStubManualRate>
+<GearFactor>1.0</GearFactor>
+<DayCount>
+<dc1>Act/360</dc1>
+<dc2>Act/365F</dc2>
+<dc3>Act/365.25</dc3>
+<dc4>Act/ActISDA</dc4>
+<dc5>Act/ActISDA 251</dc5>
+<dc6>Equal</dc6>
+<dc7>Bus/252</dc7>
+<dc8>Bus/360</dc8>
+<dc9>FULL</dc9>
+<dc10>30B/360</dc10>
+<dc11>30E/360</dc11>
+<dc12>ISDA30E360</dc12>
+<dc13>30I/360</dc13>
+<dc14>30S/360</dc14>
+</DayCount>
+<DiscountCurve>
+<dcu1>GBPLIBOR</dcu1>
+<dcu2>GEKLIBOR</dcu2>
+<dcu3>HKDLIBOR</dcu3>
+<dcu4>HNLLIBOR</dcu4>
+<dcu5>INRLIBOR</dcu5>
+<dcu6>ISKLIBOR</dcu6>
+<dcu7>JMDLIBOR</dcu7>
+<dcu8>JPYIBOR</dcu8>
+<dcu9>KESLIBOR</dcu9>
+<dcu10>KGSLIBOR</dcu10></DiscountCurve>
+<AccrualBusDay>
+<abd1>MOD</abd1>
+<abd2>FOL</abd2>
+<abd3>PRE</abd3>
+<abd4>NONE</abd4>
+</AccrualBusDay>
+<AccrualCalendars>
+<ac1>ABU</ac1>
+<ac2>ADE</ac2>
+<ac3>ALM</ac3>
+<ac4>AMS</ac4>
+<ac5>AUK</ac5>
+<ac6>AnB</ac6>
+<ac7>BAB</ac7>
+<ac8>BAR</ac8>
+<ac9>BAS</ac9>
+<ac10>LON</ac10>
+</AccrualCalendars>
+<AccrualFreq>
+<af1>Once</af1>
+<af2>Annual</af2>
+<af3>Semiannual</af3>
+<af4>FourthMonthly</af4>
+<af5>Quarterly</af5>
+<af6>BiMonthly</af6>
+<af7>Monthly</af7>
+<af8>BiWeekly</af8>
+<af9>Weekly</af9>
+<af10>Daily</af10>
+</AccrualFreq>
+<AccrualMarching>
+<am1>Dof A</am1>
+<am2>Dof M</am2>
+<am3>Fwd</am3>
+<am4>Eom</am4>
+<am5>Bkwd</am5>
+<am6>IMM</am6>
+<am7>ED</am7>
+</AccrualMarching>
+<AccrualRollDay>0</AccrualRollDay>
+<AccrualRollWeek>
+<arw1>MONDAY</arw1>
+<arw2>TUESDAY</arw2>
+<arw3>WEDNESDAY</arw3>
+<arw4>THURSDAY</arw4>
+<arw5>FRIDAY</arw5>
+<arw6>SATURDAY</arw6>
+<arw7>SUNDAY</arw7>
+<arw8>NO_WEEKDAY</arw8>
+</AccrualRollWeek>
+<AmortRollMonth>NO</AmortRollMonth>
+<CompFreq>2</CompFreq>
+<Compounding>
+<c1>ADJ/ADJ</c1>
+<c2>ADJ/FLAT</c2>
+<c3>FLAT/ADJ</c3>
+<c4>FLAT/FLAT</c4>
+<c5>NONE</c5>
+</Compounding>
+</swapticket>

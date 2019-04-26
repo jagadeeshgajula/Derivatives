@@ -1,0 +1,9 @@
+.navbar{
+    margin-left:-30px;
+    border:none;
+    border-radius:0px;
+}
+.left-nav ul{margin-top: -5px}
+.navbar-nav li{padding-left:10px}
+.form-control{ border-radius:0px;size: 0px}
+.content{margin-top:10px;margin-left: 20px}
