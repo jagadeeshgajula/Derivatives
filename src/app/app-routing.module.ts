@@ -1,66 +1,74 @@
+import { QuickticketComponent } from './CapFloor/quickticket/quickticket.component';
 import { CapFloorComponent } from './AssetBlotter/irdblotter/search/cap-floor/cap-floor.component';
 import { FraComponent } from './AssetBlotter/irdblotter/search/fra/fra.component';
 import { SwapOptionComponent } from './AssetBlotter/irdblotter/search/swap-option/swap-option.component';
 import { SwapComponent } from './AssetBlotter/irdblotter/search/swap/swap.component';
-import { SwapticketComponent } from './swapticket/swapticket.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SwappaymentComponent } from './swappayment/swappayment.component';
-import { SwapresetComponent } from './swapreset/swapreset.component';
-import { SwapamortisationComponent } from './swapamortisation/swapamortisation.component';
-import { QuickticketComponent } from './quickticket/quickticket.component';
-import { SwapoptionComponent } from './swapoption/swapoption.component';
-import { TradebasicComponent } from './tradebasic/tradebasic.component';
-import { AdditionalfieldsComponent } from './additionalfields/additionalfields.component';
-import { FeesComponent } from './fees/fees.component';
-import { SalescreditComponent } from './salescredit/salescredit.component';
-import { MarginComponent } from './margin/margin.component';
-import { AssignmentComponent } from './assignment/assignment.component';
-import { PartialasignmentComponent } from './partialasignment/partialasignment.component';
-import { SwapoptionquickComponent } from './swapoptionquick/swapoptionquick.component';
 import { IRDBlotterComponent } from './AssetBlotter/irdblotter/irdblotter.component';
 import { SearchComponent } from './AssetBlotter/irdblotter/search/search.component';
 import { ResultsComponent } from './AssetBlotter/irdblotter/results/results.component';
 
+//tarun components 
+import { CapfloorComponent } from './CapFloor/capfloor/capfloor.component';
+import { PaymentsComponent } from './CapFloor/payments/payments.component';
+import { ResetsComponent } from './CapFloor/resets/resets.component';
+import { AmortizationComponent } from './CapFloor/amortization/amortization.component';
+
+import { TradebasicComponent } from './CapFloor/tradebasic/tradebasic.component';
+import { AdditionalFieldsComponent } from './CapFloor/additional-fields/additional-fields.component';
+import { FeesComponent } from './CapFloor/fees/fees.component';
+import { PartialAssignmentComponent } from './CapFloor/partial-assignment/partial-assignment.component';
+import { AssignmentComponent } from './CapFloor/assignment/assignment.component';
+import { MarginComponent } from './CapFloor/margin/margin.component';
+import { SalesCreditComponent } from './CapFloor/sales-credit/sales-credit.component';
+
+
 const routes: Routes = [
+
   {
-    path: 'swapticket', component: SwapticketComponent,
-    children: [{ path: 'payment', component: SwappaymentComponent },
-    { path: 'reset', component: SwapresetComponent },
-    { path: 'amortisation', component: SwapamortisationComponent },
-    ]
-  },
-  { path: 'quickticket', component: QuickticketComponent },
-  { path: 'swapoptionquick', component: SwapoptionquickComponent },
-  {
-    path: 'swapoption', component: SwapoptionComponent,
-    children: [{ path: 'payment', component: SwappaymentComponent },
-    { path: 'reset', component: SwapresetComponent },
-    { path: 'amortisation', component: SwapamortisationComponent },
-    ]
-  },
-  { path: 'tradebasic', component: TradebasicComponent },
-  { path: 'additionalfields', component: AdditionalfieldsComponent },
-  { path: 'fees', component: FeesComponent },
-  { path: 'salescredit', component: SalescreditComponent },
-  { path: 'margin', component: MarginComponent },
-  { path: 'assignment', component: AssignmentComponent },
-  { path: 'partialassignment', component: PartialasignmentComponent },
-  {path:'irdBlotter', component: IRDBlotterComponent,
-    children:[
+    path: 'irdBlotter', component: IRDBlotterComponent,
+    children: [
       //{path:'',component:SearchComponent},
-      {path:'search',component: SearchComponent,
-      children:[
-        {path:'',component:SwapComponent},
-        {path:'swap',component:SwapComponent},
-        {path:'swapOption',component:SwapOptionComponent},
-        {path:'fra',component:FraComponent},
-        {path:'cap-floor',component:CapFloorComponent}
-      ]
-      },
-      {path:'results',component: ResultsComponent}
-    ]
-},
+      {
+        path: 'search', component: SearchComponent,
+        children: [
+          { path: '', component: SwapComponent },
+          { path: 'swap', component: SwapComponent },
+          { path: 'swapOption', component: SwapOptionComponent },
+          { path: 'fra', component: FraComponent },
+          { path: 'cap-floor', component: CapFloorComponent }
+        ]},
+      { path: 'results', component: ResultsComponent }
+    ]},
+
+
+  {
+    path: 'cap', component: CapfloorComponent,
+    children: [
+      { path: 'payment', component: PaymentsComponent },
+      { path: 'reset', component: ResetsComponent },
+      { path: 'amortization', component: AmortizationComponent }
+    ]},
+
+
+  {
+    path: 'trade', component: TradebasicComponent,
+    children:[
+      {path:'additional',component:AdditionalFieldsComponent},
+      {path:'fees',component:FeesComponent},
+      {path:'sales',component:SalesCreditComponent},
+      {path:'margin',component:MarginComponent},
+      {path:'assign',component:AssignmentComponent},
+      {path:'partial',component:PartialAssignmentComponent}
+    ]},
+
+    {path:'quickticket',component:QuickticketComponent},
+
+  
+
+
+
 
 ];
 
@@ -70,19 +78,26 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingComponents = [
-  SwapticketComponent,
-  SwappaymentComponent,
-  SwapresetComponent,
-  SwapamortisationComponent,
-  QuickticketComponent,
-  SwapoptionComponent,
+
+  IRDBlotterComponent,
+
+  CapfloorComponent,
   TradebasicComponent,
-  AdditionalfieldsComponent,
+  AdditionalFieldsComponent,
   FeesComponent,
-  SalescreditComponent,
+  SalesCreditComponent,
   MarginComponent,
   AssignmentComponent,
-  PartialasignmentComponent,
-  SwapoptionquickComponent,
-  IRDBlotterComponent,
+  PartialAssignmentComponent,
+  ResetsComponent,
+  AmortizationComponent,
+  PaymentsComponent,
+  QuickticketComponent,
+
+
+  
+
+
+
+
 ]

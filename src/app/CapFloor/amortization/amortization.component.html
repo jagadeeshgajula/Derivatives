@@ -1,0 +1,342 @@
+
+<div class="form-group ">
+
+    <div class="row">
+      <br>
+        <div class="row">
+       <div [ngClass]="['form-group']" >
+          
+          <label class="control-label col-sm-3 contorl-align-label contorl-align-text">Amort Type</label>
+            <div class="col-sm-5">
+        <div class="col-sm-4"> 
+         <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+            <option>{{model.cmbAmortType}}</option>
+         </select>  
+        </div>
+        
+        </div>
+       </div>
+      </div>
+
+
+      <div class="row">
+          <div [ngClass]="['form-group']">
+             
+             <label class="control-label col-sm-3 contorl-align-label">AmortStartDate/EndDate</label>
+               
+           <div class="col-sm-8">
+             <div class="form-inline">
+                <input type="date" value={{model.txtAmortStartDate}} class="form-control">
+          
+                 <input type="date" value={{model.txtAmortEndDate}} class="form-control" [ngStyle]="{'margin-left.px':'18'}">
+           </div>
+           </div>
+          </div>
+       
+      </div>
+
+
+      <div class="row">
+          <div [ngClass]="['form-group']" >
+            
+             <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                AmortBusDay/Calendars </label>
+               
+           <div class="col-sm-8">
+             <div class="form-inline">
+               
+             <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                 <option>{{model.cmbAmortBusDay}}</option>
+                 
+               </select>
+              
+               <select class="form-control col-sm-4" [ngStyle]="{'margin-left.px':'16'}">
+                  <option>{{model.cntAmortCalendars}}</option>
+               
+                </select>
+           </div>
+           </div>
+          </div>
+         </div>
+
+
+         <div class="row">
+            <div [ngClass]="['form-group']" >
+              
+               <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                  AmortFreq/Marching </label>
+                 
+             <div class="col-sm-8">
+               <div class="form-inline">
+                 
+               <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                   <option>{{model.cmbAmortFreq}}</option>
+                   
+                 </select>
+                
+                 <select class="form-control col-sm-4" [ngStyle]="{'margin-left.px':'16'}">
+                    <option>{{model.cmbAmortMarching}}</option>
+                  </select>
+             </div>
+             </div>
+            </div>
+           </div>
+
+
+           <div class="row">
+              <div [ngClass]="['form-group']" >
+                
+                 <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                    AmortRollDay/RollWeek </label>
+                   
+               <div class="col-sm-8">
+                 <div class="form-inline">
+                   
+                 <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                     <option>{{model.cmbAmortRollDay}}</option>
+                     
+                   </select>
+                  
+                   <select class="form-control col-sm-6" [ngStyle]="{'margin-left.px':'16'}">
+                      <option>{{model.cmbAmortRollWeek}}</option>
+                    </select>
+               </div>
+               </div>
+              </div>
+             </div>
+
+             <div class="row">
+                <div [ngClass]="['form-group']">
+                   
+                   <label class="control-label col-sm-3 contorl-align-label">AmortAmount</label>
+                     
+                 <div class="col-sm-2">
+                   
+                  <input type="text" class="form-control" value={{model.txtAmortAmount}}>
+                  
+                 </div>
+                </div>
+            </div>
+
+               
+            <br>
+            <h1 class="header">Schedule</h1>
+            <div class="row">
+               <div [ngClass]="['form-group']" >
+                  <br>
+                  <label class="control-label col-sm-3 contorl-align-label contorl-align-text">PV/Currency</label>
+                    <div class="col-sm-5">
+                <div class="col-sm-7"> 
+                  <input class="form-control" type="text"  value={{model.txtPV}} [ngStyle]="{'margin-left.px':'-16'}">
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control col-sm-4" [ngStyle]="{'margin-left.px':'-19'}">
+                      <option>{{model.cmbPVCurrency}}</option>
+                    </select>
+                </div>
+              </div>
+                  </div>
+                  </div>
+
+
+              <div class="row">
+                  
+                 <div [ngClass]="['form-group']" >
+                    <br>
+                    <label class="control-label col-sm-3 contorl-align-label contorl-align-text">Parallel Delta/Curve</label>
+                      <div class="col-sm-5">
+                  <div class="col-sm-5"> 
+                    <input class="form-control" type="text" value={{model.txtRecParallelDelta}} [ngStyle]="{'margin-left.px':'-16'}">
+                  </div>
+                  <div class="col-sm-4">
+                      <select class="form-control " [ngStyle]="{'margin-left.px':'-19'}" >
+                        <option>{{model.cmbCurvePnl}}</option>
+                      </select>
+                  </div>
+                  </div>
+                 
+                </div>
+
+
+
+
+
+
+
+
+    <!-- <div class="form-group col-sm-6">
+      <div class="form-group col-sm-12">
+        <label class="control-label">Amort Type</label>
+      </div>
+    </div>
+    <div class="form-group col-sm-6">
+
+      <div class="form-group col-sm-5">
+        <select class="form-control">
+           <option>NONE</option>
+          <option>AMOUNT</option>
+          <option>PERCENT</option>
+          <option>EQUAL</option>
+          <option>MORTGAGE</option> 
+          <option>{{model.cmbAmortType}}</option>
+        </select>
+      </div>
+      <div class="form-group col-sm-5">
+      </div>
+      </div>
+      
+
+      <div class="form-group col-sm-6">
+          <div class="form-group col-sm-12">
+<label class="control-label">AmortStartDate/EndDate</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-6">
+<input type="date" value={{model.txtAmortStartDate}} class="form-control">
+</div>
+<div class="form-group col-sm-6">
+<input type="date" value={{model.txtAmortEndDate}} class="form-control">
+</div>
+<div class="clearfix"></div>
+</div>
+
+   
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-12">
+<label class="control-label">AmortBusDay/Calendars</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-3">
+<select class="form-control">
+  <option>MOD</option>
+  <option>FOL</option>
+  <option>PRE</option>
+  <option>None</option> 
+<option>{{model.cmbAmortBusDay}}</option>
+</select>
+</div>
+<div class="form-group col-sm-6">
+<select class="form-control">
+  <option>{{model.cntAmortCalendars}}</option>
+  <option></option>
+  <option></option>
+</select>
+</div>
+<div class="clearfix"></div>
+</div>
+
+
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-12">
+<label class="control-label">AmortFreq/Marching</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-5">
+<select class="form-control">
+  <option>Once</option>
+  <option>Annual</option>
+  <option>Semiannual</option>
+  <option>FourthMonthly</option>
+  <option>Quarterly</option>
+  <option>Bimonthly</option>
+  <option>Monthly</option>
+  <option>Biweekly</option>
+  <option>Weekly</option>
+  <option>Daily</option> 
+  <option>{{model.cmbAmortFreq}}</option>
+</select>
+</div>
+<div class="form-group col-sm-5">
+    <select class="form-control">
+        <option>DofW</option>
+        <option>DofM</option>
+        <option>Fwd</option>
+        <option>Eom</option>
+        <option>Bkwd</option>
+        <option>IMM</option>
+        <option>ED</option> 
+        <option>{{model.cmbAmortMarching}}</option>
+      </select>
+</div>
+<div class="clearfix"></div>
+</div>
+
+
+
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-12">
+<label class="control-label">AmortRollDay/RollWeek</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-3">
+<select class="form-control">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  <option>28</option>
+  <option>29</option>
+  <option>30</option>
+  <option>31</option> 
+  <option>{{model.cmbAmortRollDay}}</option>
+</select>
+</div>
+<div class="form-group col-sm-4">
+    <select class="form-control">
+         <option>MONDAY</option>
+        <option>TUESDAY</option>
+        <option>WEDNESDAY</option>
+        <option>THURSDAY</option>
+        <option>FRIDAY</option>
+        <option>SATURDAY</option>
+        <option>SUNDAY</option>
+        <option>NO_WEEKDAY</option> 
+        <option>{{model. cmbAmortRollWeek}}</option>
+      </select>
+</div>
+<div class="clearfix"></div>
+</div>
+   
+
+<div class="form-group col-sm-6">
+    <div class="form-group col-sm-12">
+<label class="control-label">AmortAmount</label>
+</div>
+</div>
+<div class="form-group col-sm-6">
+<div class="form-group col-sm-7">
+<input type="text" value={{model.txtAmortAmount}} class="form-control"/>
+</div>
+<div class="form-group col-sm-5">
+    
+</div>
+<div class="clearfix"></div> -->
+</div>

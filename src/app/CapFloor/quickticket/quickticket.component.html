@@ -1,0 +1,187 @@
+<div class="row content-section">
+    <div class="col-sm-2">
+      <div class="left-nav sidebar">
+        <ul>
+          <li>
+            <a routerLink="/trade" routerLinkActive="active">Trade Basic</a>
+          </li>
+          <li>
+            <a routerLink="/cap" routerLinkActive="active">Cap Floor</a>
+          </li>
+          <li>
+            <a routerLink="/quickticket" routerLinkActive="active">Quick Ticket</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  
+    <div class="col-sm-10">
+      <div>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Actions <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">New</a></li>
+                  <li><a href="#">Save As</a></li>
+                  <li><a href="#">Save</a></li>
+                  <li><a href="#">Delete</a></li>
+                  <li><a href="#">Reload</a></li>
+                  <li><a href="#">Approve</a></li>
+                  <li><a href="#">Exit</a></li>
+                </ul>
+              </li>
+  
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Business Events <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Bought Back</a></li>
+                  <li><a href="#">Partial Bought Back</a></li>
+                  <li><a href="#">MO Maintenance</a></li>
+                  <li><a href="#">Migration</a></li>
+                  <li><a href="#">Assignment</a></li>
+                  <li><a href="#">Partial Assignment</a></li>
+                  <li><a href="#">Allocation</a></li>
+                </ul>
+              </li>
+  
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Flow <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Push To MO</a></li>
+                  <li><a href="#">Push To FO</a></li>
+                  <li><a href="#">Push To BU</a></li>
+                  <li><a href="#">Withdraw</a></li>
+                  <li><a href="#">Email</a></li>
+                </ul>
+              </li>
+  
+  
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Analytics<span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Calculate PV F2</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle dropright" data-toggle="dropdown"> Calculate Risk <span
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+  
+                  <li><a href="#">Calculate PAA F10</a></li>
+                  <li><a href="#">Calculate Report F3</a></li>
+  
+                </ul>
+              </li>
+  
+              <li class="help">
+                <span class="navbar-text">
+                  Help
+                </span>
+              </li>
+              <li>
+                  <label>Market</label>
+                </li>
+                <li>
+                  <select class="form-control">
+                    <option>Live</option>
+                    <option>EndOfDay</option>
+                    <option>Historic</option>
+                  </select>
+                </li>
+  
+              <li class="today">
+                <label>ToDay</label>&nbsp;
+                <input type='date' class="cal" />
+              </li>
+  
+            </ul>
+          </div>
+  
+        </nav>
+      </div>
+
+      <div class="form-group ">
+      <br>
+          <div class="row">
+              <div [ngClass]="['form-group']" >
+                 <br>
+                 <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >Currency/Notional
+                   </label>
+                   
+               <div class="col-sm-8">
+                 <div class="form-inline">
+                   
+                 <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                     <option>{{model.cmbQCurrency}}</option>
+                     <option></option>
+                   </select>
+                  
+                 <input type="text" value={{model.txtNotional}} class="form-control  col-sm-3"
+                  [ngStyle]="{'margin-left.px':'16'}">
+               </div>
+               </div>
+              </div>
+             </div>
+                    
+      
+
+
+             
+             <div class="row">
+               <br>
+                <div [ngClass]="['form-group']">
+                   
+                   <label class="control-label col-sm-3 contorl-align-label">Tenor</label>
+                     
+                 <div class="col-sm-3">
+                   
+                  <input type="text" class="form-control" value={{model.txtQTenor}}>
+                  
+                 </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+              <br>
+                <div [ngClass]="['form-group']">
+                   
+                   <label class="control-label col-sm-3 contorl-align-label">StartDate/EndDate</label>
+                     
+                 <div class="col-sm-8">
+                   <div class="form-inline">
+                      <input type="date" value={{model.txtQStartDate}} class="form-control">
+                
+                       <input type="date" value={{model.txtQEndDate}} class="form-control" [ngStyle]="{'margin-left.px':'18'}">
+                 </div>
+                 </div>
+                </div>
+            </div>
+    
+  <br>
+  <hr>
+
+      
+
+
+
+
+      </div>
+        
+    
+        
+        
+            
+  
+  
+   
+   
+  
+  

@@ -1,0 +1,358 @@
+<div class="row content-section">
+  <div class="col-sm-2">
+    <div class="left-nav sidebar">
+      <ul>
+        <li>
+          <a routerLink="/trade">Trade Basic</a>
+        </li>
+        <li>
+          <a routerLink="/cap" routerLinkActive="active">Cap Floor</a>
+        </li>
+        <li>
+          <a routerLink="/quickticket">Quick Ticket</a>
+        </li>
+      </ul>
+    
+    </div>
+  </div>
+
+  <div class="col-sm-10">
+    <div class="row">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Actions <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">New</a></li>
+                
+                <li class="dropdown-submenu">
+                  <a class="test">Save As<span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                   <li><a>New Trade</a></li>
+                   <li><a>Template Trade</a></li>
+                  </ul>
+                </li>
+
+
+
+                <li><a href="#">Save</a></li>
+                <li><a href="#">Delete</a></li>
+                <li class="dropdown-submenu">
+                    <a class="test">Reload<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a>Latest</a></li>
+                      <li><a>History</a></li>
+                      <li><a>Templates</a></li>
+                     </ul>
+                    </li>
+                <li><a href="#">Approve</a></li>
+                <li><a href="#">Exit</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Business Events <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Bought Back</a></li>
+                <li><a href="#">Partial Bought Back</a></li>
+                <li><a href="#">MO Maintenance</a></li>
+                <li><a href="#">Migration</a></li>
+                <li><a href="#">Assignment</a></li>
+                <li><a href="#">Partial Assignment</a></li>
+                <li><a href="#">Allocation</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Flow <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Push To MO</a></li>
+                <li><a href="#">Push To FO</a></li>
+                <li><a href="#">Push To BU</a></li>
+                <li><a href="#">Withdraw</a></li>
+                <li class="dropdown-submenu">
+                    <a class="test">Email<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a>Trade Ticket</a></li>
+                      <li><a>Send Ticket</a></li>
+                      <li><a>Send CashFlow</a></li>
+                      <li><a>Send Risk</a></li>
+                      <li><a>Send PV</a></li>
+                    </ul> 
+                 
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Analytics<span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Calculate PV F2</a></li>
+                <li class="dropdown-submenu">
+                  <a  class="test"> Calculate Risk <span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a>Delta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+D</a></li>
+                    <li><a>Gamma &nbsp;&nbsp;Ctrl+G</a></li>
+                    <li><a>Vega &nbsp;&nbsp;&nbsp;&nbsp;Ctrl+V</a></li>
+                    <li><a>Theta &nbsp;&nbsp;&nbsp;&nbsp;Ctrl+T</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#">Calculate PAA F10</a></li>
+                <li><a href="#">Calculate Report F3</a></li>
+
+              </ul>
+            </li>
+
+            <li class="help">
+              <span class="navbar-text">
+                Help
+              </span>
+            </li>
+            <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Market <span
+                  class="caret"></span>
+                  <select >
+                      <li><a href="#">Live</a></li>
+                      <li><a href="#">EndOfDay</a></li>
+                      <li><a href="">Historic</a></li>
+      
+                    </select>
+                </a>
+              
+            </li> -->
+            <li class="lab-market">
+              <label>Market</label>
+            </li>
+            <li>
+              
+              <select class="form-control">
+                <option>Live</option>
+                <option>EndOfDay</option>
+                <option>Historic</option>
+              </select>
+            </li>
+
+            <li class="today">
+              <label >ToDay</label>&nbsp;
+              <input type='date' class="cal" />
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+    
+        
+          <div class="row fonts">
+            <div class="row">
+           <div [ngClass]="['form-group']" >
+              <br>
+              <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >Currency/Tenor
+                </label>
+                
+            <div class="col-sm-8">
+              <div class="form-inline">
+                
+              <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                  <option *ngFor="let currency of model.cmbCurrency.cur">{{currency}}</option>
+                  
+                </select>
+               
+              <input type="text" value={{model.txtTenor}} class="form-control  col-sm-3"
+               [ngStyle]="{'margin-left.px':'16'}">
+            </div>
+            </div>
+           </div>
+          </div>
+                 
+
+           <div class="row">
+              <div [ngClass]="['form-group']">
+                 
+                 <label class="control-label col-sm-3 contorl-align-label">Notional</label>
+                   
+               <div class="col-sm-2">
+                
+                    <input type="text" value={{model.txtNotional}} class="form-control">
+               
+               </div>
+              </div>
+           
+          </div>
+
+
+          <div class="row">
+              <div [ngClass]="['form-group']">
+                 
+                 <label class="control-label col-sm-3 contorl-align-label">CFSubType</label>
+                   
+               <div class="col-sm-3">
+                 
+                    <select class="form-control">
+                        <option *ngFor="let cfType of model.cmbCfSubType.id">{{cfType}}</option>
+                        
+                      </select> 
+               
+               </div>
+              </div>
+           
+          </div>
+
+
+
+
+
+          <div class="row">
+              <div [ngClass]="['form-group']">
+                 
+                 <label class="control-label col-sm-3 contorl-align-label">CapStartDate/EndDate</label>
+                   
+               <div class="col-sm-8">
+                 <div class="form-inline">
+                    <input type="date" value={{model.txtCapsStartDate}} class="form-control">
+                    
+                    <input type="date" value={{model.txtCapsEndDate}} class="form-control" [ngStyle]="{'margin-left.px':'18'}">
+               </div>
+               </div>
+              </div>
+           
+          </div>
+
+
+          <div class="row">
+              <div [ngClass]="['form-group']">
+                 
+                 <label class="control-label col-sm-3 contorl-align-label">CapStartRoll/EndRoll</label>
+                   
+               <div class="col-sm-8">
+                 <div class="form-inline">
+                    <select class="form-control">
+                        <option>{{model.cmbStartDateRollFlag}}</option>  
+                        <option>Yes</option>
+                      </select>
+
+                      <select class="form-control" [ngStyle]="{'margin-left.px':'20'}">
+                          <option>{{model.cmbEndDateRollFlag}}</option>
+                          <option>Yes</option>
+                                   
+                        </select> 
+               </div>
+               </div>
+              </div>
+           
+          </div>
+
+
+
+          <div class="row">
+              <div [ngClass]="['form-group']">
+                 
+                 <label class="control-label col-sm-3 contorl-align-label">StartStub/EndStub</label>
+                   
+               <div class="col-sm-8">
+                 <div class="form-inline">
+                    <input type="date" value={{model.txtStartStubDate}} class="form-control">
+              
+                     <input type="date" value={{model.txtBackStubDate}} class="form-control" [ngStyle]="{'margin-left.px':'18'}">
+               </div>
+               </div>
+              </div>
+           
+          </div>
+
+
+
+          <div class="row">
+              <div [ngClass]="['form-group']">
+                 
+                 <label class="control-label col-sm-3 contorl-align-label">StartStubM.Rate/EndStubM.Rate</label>
+                   
+               <div class="col-sm-8">
+                 <div class="form-inline">
+                    <input type="text" value={{model.txtFrontStubManualRate}} class="form-control">  
+  
+                     <input type="text" value={{model.txtBackStubManualRate}} class="form-control" [ngStyle]="{'margin-left.px':'18'}"/>
+               </div>
+               </div>
+              </div>
+           
+          </div>
+
+          
+          <div class="row">
+              <div [ngClass]="['form-group']">
+                 
+                 <label class="control-label col-sm-3 contorl-align-label">BugFlag/CapFloorType</label>
+                   
+               <div class="col-sm-8">
+                 <div class="form-inline">
+                   
+                    <select class="form-control">
+                        <option>{{model.cmbBuyFlag}}</option>
+                        <option>No</option>
+                                 
+                      </select> 
+                 
+                    <select class="form-control" [ngStyle]="{'margin-left.px':'16'}">
+                        <option>{{model.cmbCapFloorType}}</option>
+                        <option>Floor</option>
+                                 
+                      </select> 
+               </div>
+               </div>
+              </div>
+           
+          </div>
+
+
+
+         
+       
+  </div>
+<div>
+ </div>
+ </div>
+ 
+ 
+    
+   
+  
+
+    <div>
+      
+        <div class="col-sm-2"></div>
+          <div class="col-sm-10">
+              <div>
+                <br><br>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                       </div>
+                      <ul class="nav navbar-nav ul">
+                              <li > <a  [routerLink]="['./payment']"  routerLinkActive="active">Payments</a>
+                               </li>
+                                <li >
+                                    <a [routerLink]="['./reset']"  routerLinkActive="active">Resets</a>
+                                  </li>
+                                  <li>
+                                      <a [routerLink]="['./amortization']" routerLinkActive="active">Amortization</a>
+                                    </li>
+                              </ul>
+                    </div>
+                    </nav>
+                  </div>
+
+
+                  <div>
+                      <router-outlet></router-outlet>
+                    </div>
+
+
+
+  </div>
+
+  
