@@ -35,10 +35,7 @@ export class MenuComponent implements OnInit{
      this.model.txtFirstName=this.obj.MenuOptions.FirstName;
      this.model.txtLastName=this.obj.MenuOptions.LastName;
      this.model.cmbBusiness=this.obj.MenuOptions.Business;
-     this.model.cmbDepartment = [this.obj.MenuOptions.Department.dep1,
-                                 this.obj.MenuOptions.Department.dep2,
-                                 this.obj.MenuOptions.Department.dep3,
-                                 this.obj.MenuOptions.Department.dep4];
+     this.model.cmbDepartment = this.obj.MenuOptions.Department.dep;
      this.model.cmbRole=this.obj.MenuOptions.Role;
      this.model.txtLastModified=this.obj.MenuOptions.ModifiedTimeStamp;
      this.model.txtLastVerified=this.obj.MenuOptions.VerifiedTimeStamp;

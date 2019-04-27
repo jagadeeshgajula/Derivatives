@@ -63,10 +63,7 @@ var MenuComponent = /** @class */ (function () {
             _this.model.txtFirstName = _this.obj.MenuOptions.FirstName;
             _this.model.txtLastName = _this.obj.MenuOptions.LastName;
             _this.model.cmbBusiness = _this.obj.MenuOptions.Business;
-            _this.model.cmbDepartment = [_this.obj.MenuOptions.Department.dep1,
-                _this.obj.MenuOptions.Department.dep2,
-                _this.obj.MenuOptions.Department.dep3,
-                _this.obj.MenuOptions.Department.dep4];
+            _this.model.cmbDepartment = _this.obj.MenuOptions.Department.dep;
             _this.model.cmbRole = _this.obj.MenuOptions.Role;
             _this.model.txtLastModified = _this.obj.MenuOptions.ModifiedTimeStamp;
             _this.model.txtLastVerified = _this.obj.MenuOptions.VerifiedTimeStamp;
@@ -557,10 +554,7 @@ var CustomerAccountComponent = /** @class */ (function () {
             _this.model.txtFirstName = _this.obj.CustomerAccount.FirstName;
             _this.model.txtLastName = _this.obj.CustomerAccount.LastName;
             _this.model.cmbBusiness = _this.obj.CustomerAccount.Business;
-            _this.model.cmbDepartment = [_this.obj.CustomerAccount.Department.dep1,
-                _this.obj.CustomerAccount.Department.dep2,
-                _this.obj.CustomerAccount.Department.dep3,
-                _this.obj.CustomerAccount.Department.dep4];
+            _this.model.cmbDepartment = _this.obj.CustomerAccount.Department.dep;
             _this.model.cmbRole = _this.obj.CustomerAccount.Role;
             _this.model.txtLastModified = _this.obj.CustomerAccount.ModifiedTimeStamp;
             _this.model.txtLastVerified = _this.obj.CustomerAccount.VerifiedTimeStamp;
@@ -713,10 +707,7 @@ var FirmAccountComponent = /** @class */ (function () {
             _this.model.txtFirstName = _this.obj.FirmAccount.FirstName;
             _this.model.txtLastName = _this.obj.FirmAccount.LastName;
             _this.model.cmbBusiness = _this.obj.FirmAccount.Business;
-            _this.model.cmbDepartment = [_this.obj.FirmAccount.Department.dep1,
-                _this.obj.FirmAccount.Department.dep2,
-                _this.obj.FirmAccount.Department.dep3,
-                _this.obj.FirmAccount.Department.dep4];
+            _this.model.cmbDepartment = _this.obj.FirmAccount.Department.dep;
             _this.model.cmbRole = _this.obj.FirmAccount.Role;
             _this.model.txtLastModified = _this.obj.FirmAccount.ModifiedTimeStamp;
             _this.model.txtLastVerified = _this.obj.FirmAccount.VerifiedTimeStamp;
@@ -869,10 +860,7 @@ var LegalEntityComponent = /** @class */ (function () {
             _this.model.txtFirstName = _this.obj.LegalEntity.FirstName;
             _this.model.txtLastName = _this.obj.LegalEntity.LastName;
             _this.model.cmbBusiness = _this.obj.LegalEntity.Business;
-            _this.model.cmbDepartment = [_this.obj.LegalEntity.Department.dep1,
-                _this.obj.LegalEntity.Department.dep2,
-                _this.obj.LegalEntity.Department.dep3,
-                _this.obj.LegalEntity.Department.dep4];
+            _this.model.cmbDepartment = _this.obj.LegalEntity.Department.dep;
             _this.model.cmbRole = _this.obj.LegalEntity.Role;
             _this.model.txtLastModified = _this.obj.LegalEntity.ModifiedTimeStamp;
             _this.model.txtLastVerified = _this.obj.LegalEntity.VerifiedTimeStamp;
@@ -1025,10 +1013,7 @@ var LocationComponent = /** @class */ (function () {
             _this.model.txtFirstName = _this.obj.Location.FirstName;
             _this.model.txtLastName = _this.obj.Location.LastName;
             _this.model.cmbBusiness = _this.obj.Location.Business;
-            _this.model.cmbDepartment = [_this.obj.Location.Department.dep1,
-                _this.obj.Location.Department.dep2,
-                _this.obj.Location.Department.dep3,
-                _this.obj.Location.Department.dep4];
+            _this.model.cmbDepartment = _this.obj.Location.Department.dep;
             _this.model.cmbRole = _this.obj.Location.Role;
             _this.model.txtLastModified = _this.obj.Location.ModifiedTimeStamp;
             _this.model.txtLastVerified = _this.obj.Location.VerifiedTimeStamp;
@@ -1181,10 +1166,7 @@ var ProductComponent = /** @class */ (function () {
             _this.model.txtFirstName = _this.obj.Product.FirstName;
             _this.model.txtLastName = _this.obj.Product.LastName;
             _this.model.cmbBusiness = _this.obj.Product.Business;
-            _this.model.cmbDepartment = [_this.obj.Product.Department.dep1,
-                _this.obj.Product.Department.dep2,
-                _this.obj.Product.Department.dep3,
-                _this.obj.Product.Department.dep4];
+            _this.model.cmbDepartment = _this.obj.Product.Department.dep;
             _this.model.cmbRole = _this.obj.Product.Role;
             _this.model.txtLastModified = _this.obj.Product.ModifiedTimeStamp;
             _this.model.txtLastVerified = _this.obj.Product.VerifiedTimeStamp;
@@ -1339,8 +1321,7 @@ var ProfileAddComponent = /** @class */ (function () {
             _this.model.txtPassword = _this.obj.ProfileAdd.Password;
             _this.model.txtSwapTicketDefaultDeal = _this.obj.ProfileAdd.SwapDefault;
             _this.model.txtSwapOptionDefaultDeal = _this.obj.ProfileAdd.SWODefault;
-            _this.model.cmbPVAutoCalc = [_this.obj.ProfileAdd.PVAutoCalc.pvno,
-                _this.obj.ProfileAdd.PVAutoCalc.pvyes];
+            _this.model.cmbPVAutoCalc = _this.obj.ProfileAdd.PVAutoCalc.pv;
             _this.model.txtThresholdPv = _this.obj.ProfileAdd.ThresholdPv;
             _this.model.cmbBusiness = _this.obj.ProfileAdd.Business;
             _this.model.txtLastModified = _this.obj.ProfileAdd.ModifiedTimeStamp;
@@ -1351,12 +1332,8 @@ var ProfileAddComponent = /** @class */ (function () {
             _this.model.cmbDomain = _this.obj.ProfileAdd.Domain;
             _this.model.txtFraDefaultDeal = _this.obj.ProfileAdd.FraDefault;
             _this.model.txtCapFloorDefaultDeal = _this.obj.ProfileAdd.CapFloorDefault;
-            _this.model.cmbAdministrator = [_this.obj.ProfileAdd.Administrator.adminno,
-                _this.obj.ProfileAdd.Administrator.adminyes];
-            _this.model.cmbDepartment = [_this.obj.ProfileAdd.Department.dep1,
-                _this.obj.ProfileAdd.Department.dep2,
-                _this.obj.ProfileAdd.Department.dep3,
-                _this.obj.ProfileAdd.Department.dep4];
+            _this.model.cmbAdministrator = _this.obj.ProfileAdd.Administrator.admin;
+            _this.model.cmbDepartment = _this.obj.ProfileAdd.Department.dep;
             _this.model.txtLastModifiedBy = _this.obj.ProfileAdd.LastModifiedBy;
             _this.model.txtLastVerifiedBy = _this.obj.ProfileAdd.LastVerifiedBy;
             console.log(_this.model);
@@ -1502,19 +1479,14 @@ var ProfileModifyComponent = /** @class */ (function () {
             var xml = parser.parseFromString(_this.xml, "text/xml");
             var obj = _this.ngxXml2jsonService.xmlToJson(xml);
             _this.obj = obj;
-            _this.model.cmbUserName = [_this.obj.ProfileModify.UserName.u1,
-                _this.obj.ProfileModify.UserName.u2,
-                _this.obj.ProfileModify.UserName.u3,
-                _this.obj.ProfileModify.UserName.u4,
-                _this.obj.ProfileModify.UserName.u5];
+            _this.model.cmbUserName = _this.obj.ProfileModify.UserName.u;
             _this.model.txtLoginName = _this.obj.ProfileModify.LoginName;
             _this.model.txtFirstName = _this.obj.ProfileModify.FirstName;
             _this.model.txtLastName = _this.obj.ProfileModify.LastName;
             _this.model.textBox2 = _this.obj.ProfileModify.Password;
             _this.model.txtSwapTicketDefaultDeals = _this.obj.ProfileModify.SwapTicketDefaultDeals;
             _this.model.txtSwapOptionDefaultDeal = _this.obj.ProfileModify.SwapOptionDefaultDeal;
-            _this.model.cmbPVAutoCalc = [_this.obj.ProfileModify.PVAutoCalc.pvno,
-                _this.obj.ProfileModify.PVAutoCalc.pvyes];
+            _this.model.cmbPVAutoCalc = _this.obj.ProfileModify.PVAutoCalc.pv;
             _this.model.txtAmount = _this.obj.ProfileModify.ThresholdPv;
             _this.model.cmbBusiness = _this.obj.ProfileModify.Business;
             _this.model.txtLastModified = _this.obj.ProfileModify.ModifiedTimeStamp;
@@ -1525,12 +1497,8 @@ var ProfileModifyComponent = /** @class */ (function () {
             _this.model.cmbDomain = _this.obj.ProfileModify.Domain;
             _this.model.txtFraDefaultDeal = _this.obj.ProfileModify.FraDefaultDeal;
             _this.model.txtCapFloorDefaultDeal = _this.obj.ProfileModify.CapFloorDefaultDeal;
-            _this.model.cmbAdministrator = [_this.obj.ProfileModify.Administrator.adminno,
-                _this.obj.ProfileModify.Administrator.adminyes];
-            _this.model.cmbDepartment = [_this.obj.ProfileModify.Department.dep1,
-                _this.obj.ProfileModify.Department.dep2,
-                _this.obj.ProfileModify.Department.dep3,
-                _this.obj.ProfileModify.Department.dep4];
+            _this.model.cmbAdministrator = _this.obj.ProfileModify.Administrator.admin;
+            _this.model.cmbDepartment = _this.obj.ProfileModify.Department.dep;
             _this.model.txtLastModifiedBy = _this.obj.ProfileModify.LastModifiedBy;
             _this.model.txtLastVerifiedBy = _this.obj.ProfileModify.LastVerifiedBy;
             console.log(_this.model);

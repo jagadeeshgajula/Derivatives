@@ -35,10 +35,7 @@ export class ProductComponent implements OnInit{
      this.model.txtFirstName=this.obj.Product.FirstName;
      this.model.txtLastName=this.obj.Product.LastName;
      this.model.cmbBusiness=this.obj.Product.Business;
-     this.model.cmbDepartment = [this.obj.Product.Department.dep1,
-                                 this.obj.Product.Department.dep2,
-                                 this.obj.Product.Department.dep3,
-                                 this.obj.Product.Department.dep4];
+     this.model.cmbDepartment = this.obj.Product.Department.dep;
      this.model.cmbRole=this.obj.Product.Role;
      this.model.txtLastModified=this.obj.Product.ModifiedTimeStamp;
      this.model.txtLastVerified=this.obj.Product.VerifiedTimeStamp;

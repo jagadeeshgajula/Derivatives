@@ -32,10 +32,7 @@ export class CustomerAccountComponent implements OnInit{
      this.model.txtFirstName=this.obj.CustomerAccount.FirstName;
      this.model.txtLastName=this.obj.CustomerAccount.LastName;
      this.model.cmbBusiness=this.obj.CustomerAccount.Business;
-     this.model.cmbDepartment = [this.obj.CustomerAccount.Department.dep1,
-                                 this.obj.CustomerAccount.Department.dep2,
-                                 this.obj.CustomerAccount.Department.dep3,
-                                 this.obj.CustomerAccount.Department.dep4];
+     this.model.cmbDepartment = this.obj.CustomerAccount.Department.dep;
      this.model.cmbRole=this.obj.CustomerAccount.Role;
      this.model.txtLastModified=this.obj.CustomerAccount.ModifiedTimeStamp;
      this.model.txtLastVerified=this.obj.CustomerAccount.VerifiedTimeStamp;

@@ -35,10 +35,7 @@ export class LocationComponent implements OnInit{
      this.model.txtFirstName=this.obj.Location.FirstName;
      this.model.txtLastName=this.obj.Location.LastName;
      this.model.cmbBusiness=this.obj.Location.Business;
-     this.model.cmbDepartment = [this.obj.Location.Department.dep1,
-                                 this.obj.Location.Department.dep2,
-                                 this.obj.Location.Department.dep3,
-                                 this.obj.Location.Department.dep4];
+     this.model.cmbDepartment = this.obj.Location.Department.dep;
      this.model.cmbRole=this.obj.Location.Role;
      this.model.txtLastModified=this.obj.Location.ModifiedTimeStamp;
      this.model.txtLastVerified=this.obj.Location.VerifiedTimeStamp;

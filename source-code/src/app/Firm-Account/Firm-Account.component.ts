@@ -33,10 +33,7 @@ export class FirmAccountComponent implements OnInit{
      this.model.txtFirstName=this.obj.FirmAccount.FirstName;
      this.model.txtLastName=this.obj.FirmAccount.LastName;
      this.model.cmbBusiness=this.obj.FirmAccount.Business;
-     this.model.cmbDepartment = [this.obj.FirmAccount.Department.dep1,
-                                 this.obj.FirmAccount.Department.dep2,
-                                 this.obj.FirmAccount.Department.dep3,
-                                 this.obj.FirmAccount.Department.dep4];
+     this.model.cmbDepartment = this.obj.FirmAccount.Department.dep;
      this.model.cmbRole=this.obj.FirmAccount.Role;
      this.model.txtLastModified=this.obj.FirmAccount.ModifiedTimeStamp;
      this.model.txtLastVerified=this.obj.FirmAccount.VerifiedTimeStamp;

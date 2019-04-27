@@ -6,8 +6,8 @@
 <SwapDefault>Ram.Swap.Default.xml</SwapDefault>
 <SWODefault>Ram.Swaption.Default.xml</SWODefault>
 <PVAutoCalc>
-<pvyes>Yes</pvyes>
-<pvno>No</pvno>
+<pv>No</pv>
+<pv>Yes</pv>
 </PVAutoCalc>
 <ThresholdPv>120000 </ThresholdPv>
 <Business>Bonds</Business>
@@ -20,14 +20,14 @@
 <FraDefault>FRA.Default.xml</FraDefault>
 <CapFloorDefault>CAPFLOOR.Default.xml</CapFloorDefault>
 <Administrator>
-<adminyes>Yes</adminyes>
-<adminno>No</adminno>
+<admin>No</admin>
+<admin>Yes</admin>
 </Administrator>
 <Department>
-<dep1>Front Office</dep1>
-<dep2>Back Office</dep2>
-<dep3>Middle Office</dep3>
-<dep4>Technology</dep4>
+<dep>Front Office</dep>
+<dep>Back Office</dep>
+<dep>Middle Office</dep>
+<dep>Technology</dep>
 </Department>
 <LastModifiedBy>Hari B</LastModifiedBy>
 <LastVerifiedBy>Hari B</LastVerifiedBy>

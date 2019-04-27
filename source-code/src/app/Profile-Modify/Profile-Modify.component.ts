@@ -31,19 +31,15 @@ export class ProfileModifyComponent implements OnInit{
      const xml=parser.parseFromString(this.xml,"text/xml");
      const obj=this.ngxXml2jsonService.xmlToJson(xml);
      this.obj=obj;
-     this.model.cmbUserName= [this.obj.ProfileModify.UserName.u1,
-                              this.obj.ProfileModify.UserName.u2,
-                              this.obj.ProfileModify.UserName.u3,
-                              this.obj.ProfileModify.UserName.u4,
-                              this.obj.ProfileModify.UserName.u5];
+     this.model.cmbUserName= this.obj.ProfileModify.UserName.u;
+                              
      this.model.txtLoginName = this.obj.ProfileModify.LoginName;
      this.model.txtFirstName = this.obj.ProfileModify.FirstName;
      this.model.txtLastName = this.obj.ProfileModify.LastName;
      this.model.textBox2 = this.obj.ProfileModify.Password;
      this.model.txtSwapTicketDefaultDeals= this.obj.ProfileModify.SwapTicketDefaultDeals;
      this.model.txtSwapOptionDefaultDeal= this.obj.ProfileModify.SwapOptionDefaultDeal;
-     this.model.cmbPVAutoCalc= [this.obj.ProfileModify.PVAutoCalc.pvno,
-                                this.obj.ProfileModify.PVAutoCalc.pvyes];
+     this.model.cmbPVAutoCalc= this.obj.ProfileModify.PVAutoCalc.pv;
      this.model.txtAmount = this.obj.ProfileModify.ThresholdPv;
      this.model.cmbBusiness = this.obj.ProfileModify.Business;
      this.model.txtLastModified = this.obj.ProfileModify.ModifiedTimeStamp;
@@ -54,12 +50,8 @@ export class ProfileModifyComponent implements OnInit{
      this.model.cmbDomain = this.obj.ProfileModify.Domain;
      this.model.txtFraDefaultDeal = this.obj.ProfileModify.FraDefaultDeal;
      this.model.txtCapFloorDefaultDeal = this.obj.ProfileModify.CapFloorDefaultDeal;
-     this.model.cmbAdministrator =[this.obj.ProfileModify.Administrator.adminno,
-                                   this.obj.ProfileModify.Administrator.adminyes];
-     this.model.cmbDepartment = [this.obj.ProfileModify.Department.dep1,
-                            this.obj.ProfileModify.Department.dep2,
-                            this.obj.ProfileModify.Department.dep3,
-                            this.obj.ProfileModify.Department.dep4];
+     this.model.cmbAdministrator =this.obj.ProfileModify.Administrator.admin;
+     this.model.cmbDepartment = this.obj.ProfileModify.Department.dep;
      this.model.txtLastModifiedBy = this.obj.ProfileModify.LastModifiedBy;
      this.model.txtLastVerifiedBy = this.obj.ProfileModify.LastVerifiedBy;
     

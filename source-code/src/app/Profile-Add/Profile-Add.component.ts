@@ -37,8 +37,7 @@ export class ProfileAddComponent implements OnInit{
      this.model.txtPassword= this.obj.ProfileAdd.Password;
      this.model.txtSwapTicketDefaultDeal = this.obj.ProfileAdd.SwapDefault;
      this.model.txtSwapOptionDefaultDeal = this.obj.ProfileAdd.SWODefault;
-     this.model.cmbPVAutoCalc= [this.obj.ProfileAdd.PVAutoCalc.pvno,
-                                this.obj.ProfileAdd.PVAutoCalc.pvyes];
+     this.model.cmbPVAutoCalc= this.obj.ProfileAdd.PVAutoCalc.pv;
      this.model.txtThresholdPv= this.obj.ProfileAdd.ThresholdPv;
      this.model.cmbBusiness=this.obj.ProfileAdd.Business;
      this.model.txtLastModified = this.obj.ProfileAdd.ModifiedTimeStamp;
@@ -49,12 +48,8 @@ export class ProfileAddComponent implements OnInit{
      this.model.cmbDomain = this.obj.ProfileAdd.Domain;
      this.model.txtFraDefaultDeal = this.obj.ProfileAdd.FraDefault;
      this.model.txtCapFloorDefaultDeal = this.obj.ProfileAdd.CapFloorDefault;
-     this.model.cmbAdministrator =[this.obj.ProfileAdd.Administrator.adminno,
-                                   this.obj.ProfileAdd.Administrator.adminyes];
-     this.model.cmbDepartment = [this.obj.ProfileAdd.Department.dep1,
-                                 this.obj.ProfileAdd.Department.dep2,
-                                 this.obj.ProfileAdd.Department.dep3,
-                                 this.obj.ProfileAdd.Department.dep4];
+     this.model.cmbAdministrator =this.obj.ProfileAdd.Administrator.admin;
+     this.model.cmbDepartment = this.obj.ProfileAdd.Department.dep;
      this.model.txtLastModifiedBy = this.obj.ProfileAdd.LastModifiedBy;
      this.model.txtLastVerifiedBy = this.obj.ProfileAdd.LastVerifiedBy;
     

@@ -35,10 +35,7 @@ export class LegalEntityComponent implements OnInit{
      this.model.txtFirstName=this.obj.LegalEntity.FirstName;
      this.model.txtLastName=this.obj.LegalEntity.LastName;
      this.model.cmbBusiness=this.obj.LegalEntity.Business;
-     this.model.cmbDepartment = [this.obj.LegalEntity.Department.dep1,
-                                 this.obj.LegalEntity.Department.dep2,
-                                 this.obj.LegalEntity.Department.dep3,
-                                 this.obj.LegalEntity.Department.dep4];
+     this.model.cmbDepartment = this.obj.LegalEntity.Department.dep;
      this.model.cmbRole=this.obj.LegalEntity.Role;
      this.model.txtLastModified=this.obj.LegalEntity.ModifiedTimeStamp;
      this.model.txtLastVerified=this.obj.LegalEntity.VerifiedTimeStamp;
