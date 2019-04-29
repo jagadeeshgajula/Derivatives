@@ -1,3 +1,4 @@
+
 import { QuickticketComponent } from './CapFloor/quickticket/quickticket.component';
 import { CapFloorComponent } from './AssetBlotter/irdblotter/search/cap-floor/cap-floor.component';
 import { FraComponent } from './AssetBlotter/irdblotter/search/fra/fra.component';
@@ -22,6 +23,24 @@ import { PartialAssignmentComponent } from './CapFloor/partial-assignment/partia
 import { AssignmentComponent } from './CapFloor/assignment/assignment.component';
 import { MarginComponent } from './CapFloor/margin/margin.component';
 import { SalesCreditComponent } from './CapFloor/sales-credit/sales-credit.component';
+
+
+//suchi components 
+import { SwapticketComponent } from './SwapTicket/swapticket/swapticket.component';
+import { SwappaymentComponent } from './SwapTicket/swappayment/swappayment.component';
+import { SwapresetComponent } from './SwapTicket/swapreset/swapreset.component';
+import { PartialasignmentComponent } from './SwapTicket/partialasignment/partialasignment.component';
+import { AssignmentsComponent } from './SwapTicket/assignments/assignments.component';
+import { MarginsComponent } from './SwapTicket/margins/margins.component';
+import { SalescreditComponent } from './SwapTicket/salescredit/salescredit.component';
+import { FeeComponent } from './SwapTicket/fee/fee.component';
+import { AdditionalfieldsComponent } from './SwapTicket/additionalfields/additionalfields.component';
+import { TradebasicsComponent } from './SwapTicket/tradebasics/tradebasics.component';
+import { QuickticketsComponent } from './SwapTicket/quicktickets/quicktickets.component';
+
+import { ScheduleComponent } from './SwapTicket/schedule/schedule.component';
+import { SwapamortisationComponent } from './SwapTicket/swapamortisation/swapamortisation.component';
+
 
 
 const routes: Routes = [
@@ -65,12 +84,38 @@ const routes: Routes = [
 
     {path:'quickticket',component:QuickticketComponent},
 
+//suchi routes
+    {path:'swapticket',component:SwapticketComponent,
+    children:[
+      {path:'',redirectTo:'payment',pathMatch:'full'},
+      {path:'payment',component:SwappaymentComponent},
+      {path:'reset',component:SwapresetComponent},
+      {path:'amortisation',component:SwapamortisationComponent},
+      {path:'',component:ScheduleComponent,outlet:'schedule'}]
+  
+  },
+  {path:'quicktickets',component:QuickticketsComponent},
+  {path:'tradebasic',component:TradebasicsComponent},
+  {path:'additionalfields',component:AdditionalfieldsComponent},
+  {path:'fees',component:FeeComponent},
+  {path:'salescredit',component:SalescreditComponent},
+  {path:'margin',component:MarginsComponent},
+  {path:'assignment',component:AssignmentsComponent},
+  {path:'partialassignment',component:PartialasignmentComponent},
+];
+
+
+
+
+
+
+
+
   
 
 
 
 
-];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -78,9 +123,10 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingComponents = [
-
+//jagadeesh components
   IRDBlotterComponent,
 
+//tarun components 
   CapfloorComponent,
   TradebasicComponent,
   AdditionalFieldsComponent,
@@ -93,6 +139,22 @@ export const routingComponents = [
   AmortizationComponent,
   PaymentsComponent,
   QuickticketComponent,
+
+  //suchi components 
+  SwapticketComponent, 
+  SwappaymentComponent,
+  SwapresetComponent,
+  PartialasignmentComponent,
+  AssignmentsComponent,
+  MarginsComponent,
+  SalescreditComponent,
+  FeeComponent,
+  AdditionalfieldsComponent,
+  TradebasicsComponent,
+  QuickticketsComponent,
+  ScheduleComponent,
+  SwapamortisationComponent
+
 
 
   
