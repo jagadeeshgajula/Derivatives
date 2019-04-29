@@ -1,0 +1,14 @@
+.navbar{
+    margin-left:-30px;
+    border:none;
+    border-radius:0px;
+}
+.vl {
+    border-left: 2px solid grey;
+    height: 750px;
+    position: absolute;
+    left: 47%;
+    margin-left: 0px;
+    top: 10;
+  }
+  

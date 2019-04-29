@@ -42,6 +42,22 @@ import { ScheduleComponent } from './SwapTicket/schedule/schedule.component';
 import { SwapamortisationComponent } from './SwapTicket/swapamortisation/swapamortisation.component';
 
 
+//Ramya Components
+
+import { ProfileModifyComponent } from './UserEntitlements/Profile-Modify/Profile-Modify.component';
+import { ProfileAddComponent } from './UserEntitlements/Profile-Add/Profile-Add.component';
+import { UserEntitlementComponent } from './UserEntitlements/UserEntitlement/UserEntitlement.component';
+import { LegalEntityComponent } from './UserEntitlements/Legal-Entity/Legal-Entity.component';
+import { MenuComponent } from './UserEntitlements/Menu-Options/Menu-Options.component';
+import { LocationComponent } from './UserEntitlements/Location/Location.component';
+import { ProductComponent } from './UserEntitlements/Product/Product.component';
+import { CustomerAccountComponent } from './UserEntitlements/Customer-Account/Customer-Account.component';
+import { FirmAccountComponent } from './UserEntitlements/Firm-Account/Firm-Account.component';
+
+
+
+
+
 
 const routes: Routes = [
 
@@ -102,19 +118,37 @@ const routes: Routes = [
   {path:'margin',component:MarginsComponent},
   {path:'assignment',component:AssignmentsComponent},
   {path:'partialassignment',component:PartialasignmentComponent},
+
+
+
+
+//Ramya Routes
+{path:'UserEntitlement', component:UserEntitlementComponent,
+children: [
+  { path:'Profile-Add',component:ProfileAddComponent},
+  { path: 'Profile-Modify', component:ProfileModifyComponent},
+  { path:'Firm-Account',component:FirmAccountComponent},
+  { path:'Customer-Account',component:CustomerAccountComponent},
+  { path:'Product',component:ProductComponent},
+  { path:'Location',component:LocationComponent},
+  { path:'Menu-Options',component:MenuComponent},
+  { path:'Legal-Entity',component:LegalEntityComponent}
+]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
-
-
-
-
-
-
-
-
-  
-
-
-
 
 
 @NgModule({
@@ -153,7 +187,20 @@ export const routingComponents = [
   TradebasicsComponent,
   QuickticketsComponent,
   ScheduleComponent,
-  SwapamortisationComponent
+  SwapamortisationComponent,
+
+  //Ramya
+
+  UserEntitlementComponent,
+  ProfileAddComponent,
+  ProfileModifyComponent,
+  FirmAccountComponent,
+  CustomerAccountComponent,
+  ProductComponent,
+  LocationComponent,
+  MenuComponent,
+  LegalEntityComponent
+
 
 
 
@@ -162,4 +209,4 @@ export const routingComponents = [
 
 
 
-]
+];
