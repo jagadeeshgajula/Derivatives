@@ -1,0 +1,178 @@
+<!--The content below is only a placeholder and can be replaced.-->
+ 
+<!-- The table data-->
+
+<div class="container-bg">
+  <div class="bg-color-name">
+    <p class="pag-text-align">
+      <i class="material-icons material-iconsA">
+        picture_in_picture
+      </i>&nbsp; Swap Rec Schedule
+      <mat-icon class="mat-iconB">
+        backspace
+      </mat-icon>
+    </p>
+  </div>
+
+  <div style="background-color:blue;height: 20px;">
+    <p>&nbsp;</p>
+  </div>
+  <br />
+  <div class="container">
+
+    <div class="bg-color">
+      <div class="row">
+
+        <div class="col-sm-4">
+
+          <div class="form-horizontal">
+            <div class="form-group">
+              <label for="settlementPeriods" class="control-label col-sm-6">Settlement Periods</label>
+              <div class="col-sm-4">
+                <input class="form-control" value={{settlementPeriod}} placeholder=" " type="text"
+                  id="settlementPeriods">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-4">
+          <div class="form-horizontal">
+            <div class="form-group">
+              <label for="settlementPeriods" class="control-label col-sm-6">Compounding periods</label>
+              <div class="col-sm-4">
+                <input class="form-control" value={{compoundingPeriod}} placeholder=" " type="text"
+                  id="settlementPeriods">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+
+          <div class="form-horizontal">
+            <div class="form-group">
+              <label for="settlementPeriods" class="control-label col-sm-6">Authorization periods</label>
+              <div class="col-sm-4">
+                <input class="form-control" value={{AuthorizationPeriod}} placeholder=" " type="text"
+                  id="settlementPeriods">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-horizontal">
+            <div class="form-group">
+              <label for="settlementPeriods" class="control-label col-sm-6">Total Payment Amount</label>
+              <div class="col-sm-6">
+                <input class="form-control" placeholder="Total Payment Amount" type="text" id="settlementPeriods"
+                  value={{totalPaymentAmount}}>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-horizontal">
+            <div class="form-group">
+              <label for="settlementPeriods" class="control-label col-sm-6">Total PV Amount</label>
+              <div class="col-sm-6">
+                <input class="form-control" placeholder="Total PV Amount" value=67009 type="text" id="settlementPeriods"
+                  value={{totalPVAmount}}>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+
+     
+
+      <table class="table table-bordered table-striped table-hover table-responsive-sm">
+        <thead>
+          <tr style="background-color:#343a40; color: #ffff;">
+            <th>Sno:</th>
+            <th>
+              Coupon Start Date
+            </th>
+            <th>
+              Amount
+            </th>
+            <th>
+              Coupon End Date
+            </th>
+            <th>
+              Payment Date
+            </th>
+            <th>
+              Period Rate
+            </th>
+            <th>
+              Notional
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 
+             settlementPeriod:number;
+    CompoundingPeriod:number;
+    amortizationPeriod:number;
+    totalPaymentAmount:number;
+    totalPVAmount:number;
+    couponStartDate:any;
+    amount:number;
+    couponEndDate:any;
+    paymentDate:any;
+    periodRate:number;
+    notional:number;
+           -->
+          <tr *ngFor="let x of insertedServiceList, let i=index">
+            <td>{{i+1}}</td>
+            <td>{{x.couponStartDate}}</td>
+            <td>{{x.amount}}</td>
+            <td>{{x.couponEndDate}}</td>
+            <td>{{x.paymentDate}}</td>
+            <td>{{x.periodRate}}</td>
+            <td>{{x.notional}}</td>
+          </tr>
+        </tbody>
+
+
+      </table>
+    </div>
+  </div>
+</div>
+<!----------------- end of table here , start button part below-------------------------->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <span><button color="primary" mat-raised-button (click)="insert()">Insert</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button>Delete</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)="Resets()">Resets</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)="onStubResetsClick()">Stub Resets</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button>Import</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)="onExportClick()">Export</button>&nbsp;</span>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-4">
+      <span><button color="primary" mat-raised-button>Ok</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button>Cancel</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)="onHelpClick()">Help</button>&nbsp;</span>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+ 

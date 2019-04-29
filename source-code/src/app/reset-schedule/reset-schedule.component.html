@@ -1,0 +1,148 @@
+<!-- <mat-card-header class="matCardHeader">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1">
+        <mat-icon color="primary">add_to_photos</mat-icon>
+      </div>
+      <div class="col-sm-9">
+        <mat-card-title class="matCardHeader">Swap Rec Reset Schedule</mat-card-title>
+      </div>
+
+      <div class="col-sm-1  ">
+        <mat-icon class="spacing" (click)="onNoClick()">cancel</mat-icon>
+      </div>
+    </div>
+  </div>
+
+</mat-card-header>
+
+<button mat-raised-button (click)="addColumn()"> Add column </button>
+<button mat-raised-button (click)="removeColumn()"> Remove column </button>
+
+
+<div class="example-container">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+      <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+      <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay;sticky:true"></tr>
+    <tr mat-row *matRowDef="let row; columns:columnsToDisplay;"></tr>
+  </table>
+
+
+</div>
+  -->
+
+<!-- The table data-->
+<div class="container-bg">
+  <div class="bg-color-name">
+
+    <div class="row">
+
+      <div class="col-sm-2">
+        <i class="material-icons material-iconsA">
+          picture_in_picture
+        </i>
+      </div>
+      <div class="col-sm-6 pag-text-align">
+        Swap Rec Reset Schedule
+      </div>
+      <div class="col-sm-4">
+        <span>
+          <mat-icon class="mat-iconB" (click)="onNoClick()">
+              backspace
+          </mat-icon>
+        </span>
+      </div>
+    </div>
+<div class="clearfix"></div>
+  </div>
+  
+  <div style="background-color:blue;height: 20px;">
+    <p>&nbsp;</p>
+  </div>
+
+   
+  <br>
+  <div class="row">
+    <div class="col-sm-4 swapHeadingAlign">
+     Swap-Rec Reset Schedule
+    </div>
+     
+  </div>
+
+  <div style="height:388px; overflow-y:scroll;border: 1px solid #ccc">
+    <table class="table table-bordered table-striped table-hover table-responsive-sm ">
+      <thead>
+        <tr [ngStyle]="{'background-color':'#343a40','color':'#fff'}">
+          <th>
+            Sl No.
+          </th>
+          <th>
+            Quote Date
+          </th>
+          <th>
+            Rate
+          </th>
+          <th>
+            RateIndexType
+          </th>
+          <th>
+            RateSettingType
+          </th>
+          <th>
+            ResetStartDate
+          </th>
+          <th>
+            ResetEndDate
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let x of ResetsServiceList, let i=index">
+          <td>{{i+1}}</td>
+          <td>{{x.quoteDate}}</td>
+          <td>{{x.rate}}</td>
+          <td>{{x.rateIndexType}}</td>
+          <td>{{x.rateSettingType}}</td>
+          <td>{{x.resetStartDate}}</td>
+          <td>{{x.resetEndDate}}</td>
+        </tr>
+      </tbody>
+
+
+    </table>
+
+  </div>
+</div>
+<!----------------- end of table here , start button part below------------------------->
+
+<!-- <div class="row">
+  <div class="col-sm-6 col-sm-offset-2">
+    <button color="primary" mat-raised-button (click)="okButton()">Ok &nbsp;&nbsp;&nbsp;</button>
+    <button color="primary" mat-raised-button (click)="onCancel()">Cancel &nbsp;&nbsp;&nbsp;</button>
+    <button color="primary" mat-raised-button (click)="onInsertClick()">Insert &nbsp;&nbsp;&nbsp;</button>
+    <button color="primary" mat-raised-button>Delete &nbsp;&nbsp;&nbsp;</button>
+    <button color="primary" mat-raised-button (click)="onHelpClick()">Help &nbsp;</button>
+  </div>
+</div> -->
+
+<br>
+<div class="container">
+  <div class="row lastRow">
+    <div class="col-sm-6 col-sm-offset-3 bottomBorder">
+      <span><button color="primary" mat-raised-button (click)="okButton() ">Ok</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)="onCancel()">Cancel</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)=" onInsertClick()">Insert</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button>Delete</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)="onHelpClick()">Help</button>&nbsp;</span>
+    </div>
+  </div>
+
+
+
+
+</div>

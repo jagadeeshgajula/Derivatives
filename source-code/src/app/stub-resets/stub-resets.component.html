@@ -1,0 +1,101 @@
+<!-- The table data-->
+<div class="container-bg">
+  <div class="bg-color-name">
+
+    <div class="row">
+
+      <div class="col-sm-2">
+        <i class="material-icons material-iconsA">
+          picture_in_picture
+        </i>
+      </div>
+      <div class="col-sm-6 pag-text-align">
+        Swap Rec Stub Reset Schedule
+      </div>
+      <div class="col-sm-4">
+        <span>
+          <mat-icon class="mat-iconB" (click)="onCancelClick()">
+              backspace
+          </mat-icon>
+        </span>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 ">
+      <div class="firstHeaderDiv"></div>
+      <br />
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-4 swapHeadingAlign">
+      Swap-Rec Stub Reset Schedule
+    </div>
+
+     
+  </div>
+  <div style="height:400px; overflow-y:scroll;border: 1px solid #ccc">
+    <table class="table table-bordered table-striped table-hover table-responsive-sm ">
+      <thead>
+        <tr [ngStyle]="{'background-color':'#343a40','color':'#fff'}">
+          <th>
+            Sl No.
+          </th>
+          <th>
+            StubType
+          </th>
+          <th>
+            QuoteId
+          </th>
+          <th>
+            Quote
+          </th>
+          <th>
+            Reset
+          </th>
+          <th>
+            ResetRate
+          </th>
+          <th>
+            ResetType
+          </th>
+
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let x of StubResetServiceList, let i=index">
+          <td>{{i+1}}</td>
+          <td>{{x.stubType}}</td>
+          <td>{{x.quoteId}}</td>
+          <td>{{x.reset}}</td>
+          <td>{{x.reset}}</td>
+          <td>{{x.resetRate}}</td>
+          <td>{{x.resetType}}</td>
+        </tr>
+      </tbody>
+
+
+    </table>
+
+  </div>
+</div>
+<!----------------- end of table here , start button part below-------------------------->
+<br />
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-4">
+      <span><button color="primary" mat-raised-button (click)="okButtonClick()">Ok</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)="onCancelClick()">Cancel</button>&nbsp;</span>
+      <span><button color="primary" mat-raised-button (click)="onHelpClick()">Help</button>&nbsp;</span>
+    </div>
+  </div>
+
+
+</div>
