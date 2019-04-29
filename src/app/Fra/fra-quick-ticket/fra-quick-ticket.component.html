@@ -1,0 +1,162 @@
+<div class="col-sm-2">
+    <div class="sidenav">
+        <a routerLink="/ftradebasic" routerActive="Active">TradeBasic</a>
+        <a routerLink="/ffra" routerActive="Active">Fra Ticket</a>
+        <a routerLink="/fquickticket" routerActive="Active">QuickTicket</a>
+    </div>
+</div>
+<div class="col-sm-10">
+    <nav class="navbar navbar-default ">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Actions <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">New</a></li>
+               
+                <li class="dropdown-submenu"><a class="test">Save As <span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                            <li><a >NewTrade</a></li>
+                            <li><a >TemplateTrade</a></li>
+                        </ul>
+                </li>
+                
+                <li><a href="#">Save</a></li>
+                <li><a href="#">Delete</a></li>
+                <li class="dropdown-submenu"><a class="test">Reload  <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a >Latest</a></li>
+                            <li><a >History</a></li>
+                            <li><a >Templates</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">Approve</a></li>
+                <li><a href="#">Exit</a></li>
+                </ul>
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BusinessEvent <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  <li><a href="#">Bought Back</a></li>
+                  <li><a href="#">PartialBoughtBack</a></li>
+                  <li><a href="#">Mo Maintenance</a></li>
+                  <li><a href="#">Migration</a></li>
+                  <li><a href="#">Assignment</a></li>
+                  <li><a href="#">PartialAssignment</a></li>
+                  <li><a href="#">Allocation</a></li>
+                  </ul>
+
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Flow <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">Push To Mo</a></li>
+                    <li><a href="#">Push To Bo</a></li>
+                    <li><a href="#">Withdraw </a></li>
+                    <li class="dropdown-submenu"><a class="test">Email <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a >Trade Ticket</a></li>
+                                <li><a >End Ticket</a></li>
+                                <li><a >SendCashFlow</a></li>
+                                <li><a >SendRisk</a></li>
+                                <li><a >SendPV</a></li>
+                            </ul>
+                    </li>
+                    </ul>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Analytics <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                      <li><a href="#">Calculate PV</a></li>
+                      <li class="dropdown-submenu"><a class="test">CalculateRisk <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a >Delta</a></li>
+                                <li><a >Gamma</a></li>
+                                <li><a >Vega</a></li>
+                                <li><a >Theta</a></li>
+                        </ul>
+                    </li>
+                      <li><a href="#">Calculate PAA</a></li>
+                      <li><a href="#">CashFlowReport</a></li>
+                      </ul>
+                      
+                      <li class="box">
+                          &nbsp;
+                          <label style="color:honeydew;color:black">Market:</label>&nbsp;
+                          <select>
+                            <option>Live</option>
+                            <option>End Of Day</option>
+                            <option>Historic</option>
+                          </select>&nbsp;&nbsp;
+                          <label style="color:honeydew;color:black">Today:</label>&nbsp;
+                         <input type="date">
+                        </li>
+               </ul>
+           
+        </div>
+    </nav>
+  <div class="container-fluid">
+     
+    <div class="row">
+      <div [ngClass]="['form-group']">
+        <label class="control-label col-sm-3 control-align-lable control-align-text">
+          Currency/Notional</label>
+        <div class="col-sm-8">
+          <div class="form-inline">
+            <select class="form-control col-sm-3">
+              <option>{{model.cmbQCurrency}}</option>
+              <option></option>
+            </select>
+            <input type="text" class="form-control colsm-3" value={{model.txtQNotional}}
+              [ngStyle]="{'margin-left.px':'10'}">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+<div class="row">
+  <div [ngClass]="['form-group']">
+    <label class="control-label col-sm-3 control-align-lable control-align-text">
+      AgreedRate/BuySell
+    </label>
+    <div class="col-sm-8">
+      <div class="form-inline">
+      <input type="text" class="form-control col-sm-3" value={{model.txtQAgreedRatePnl}}>
+      <select class="form-control col-sm-3" [ngStyle]="{'margin-left.px':'10'}">
+        <option>{{model.cmbQBuySell}}</option>
+        <option></option>
+      </select>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div [ngClass]="['form-group']">
+    <label class="control-label col-sm-3 control-align-lable control-align-text">
+      Tenor
+    </label>
+    <div class="col-sm-8">
+      <div class="form-inline">
+        <input type="text" class="form-control col-sm-3" value={{model.txtQTenor}}>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div [ngClass]="['form-group']">
+    <label class="control-label col-sm-3 control-align-lable control-align-text">
+      StartDate/EndDate
+    </label>
+    <div class="col-sm-8">
+      <div class="form-inline">
+        <input type="date" class="form-control col-sm-3"
+          value={{model.txtQStartDate}}>
+        <input type="date" class="form-control col-sm-3"
+          value={{model.txtQEndDate}} [ngStyle]="{'margin-left.px':'10'}">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+<router-outlet></router-outlet>

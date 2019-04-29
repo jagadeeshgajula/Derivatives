@@ -54,6 +54,18 @@ import { ProductComponent } from './UserEntitlements/Product/Product.component';
 import { CustomerAccountComponent } from './UserEntitlements/Customer-Account/Customer-Account.component';
 import { FirmAccountComponent } from './UserEntitlements/Firm-Account/Firm-Account.component';
 
+//firdose components
+import { FrasComponent } from './Fra/fras/fras.component';
+import { FraQuickTicketComponent } from './Fra/fra-quick-ticket/fra-quick-ticket.component';
+import { FraPartialAssignmentComponent } from './Fra/fra-partial-assignment/fra-partial-assignment.component';
+import { FraAssignmentComponent } from './Fra/fra-assignment/fra-assignment.component';
+import { FraMarginComponent } from './Fra/fra-margin/fra-margin.component';
+import { FraSalesCreditComponent } from './Fra/fra-sales-credit/fra-sales-credit.component';
+import { FraFeesComponent } from './Fra/fra-fees/fra-fees.component';
+import { FraAdditionalFieldsComponent } from './Fra/fra-additional-fields/fra-additional-fields.component';
+import { FraTradeBasicComponent } from './Fra/fra-trade-basic/fra-trade-basic.component';
+
+
 
 
 
@@ -133,16 +145,20 @@ children: [
   { path:'Location',component:LocationComponent},
   { path:'Menu-Options',component:MenuComponent},
   { path:'Legal-Entity',component:LegalEntityComponent}
-]}
+]},
 
-
-
-
-
-
-
-
-
+//firdose
+{path:'ffra', component:FrasComponent},
+{path:'ftradebasic', component:FraTradeBasicComponent,
+children:[
+  {path:'fadditional', component:FraAdditionalFieldsComponent},
+  {path:'ffees', component:FraFeesComponent},
+  {path:'fsales', component:FraSalesCreditComponent},
+  {path:'fmargin', component:FraMarginComponent},
+  {path:'fassign', component:FraAssignmentComponent},
+  {path:'fpartial',component:FraPartialAssignmentComponent}
+]},
+{path:'fquickticket', component:FraQuickTicketComponent},
 
 
 
@@ -199,8 +215,18 @@ export const routingComponents = [
   ProductComponent,
   LocationComponent,
   MenuComponent,
-  LegalEntityComponent
+  LegalEntityComponent,
 
+  //firdose
+  FrasComponent,
+  FraTradeBasicComponent,
+  FraQuickTicketComponent,
+  FraAdditionalFieldsComponent,
+  FraFeesComponent,
+  FraSalesCreditComponent,
+  FraMarginComponent,
+  FraAssignmentComponent,
+  FraPartialAssignmentComponent
 
 
 

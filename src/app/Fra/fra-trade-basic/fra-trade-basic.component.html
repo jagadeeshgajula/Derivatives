@@ -1,0 +1,330 @@
+<div class="col-sm-2">
+    <div class="sidenav">
+        <a routerLink="/ftradebasic" routerActive="Active">TradeBasic</a>
+        <a routerLink="/ffra" routerActive="Active">Fra Ticket</a>
+        <a routerLink="/fquickticket" routerActive="Active">QuickTicket</a>
+
+    </div>
+</div>
+<div class="col-sm-10">
+    <nav class="navbar navbar-default ">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Actions <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">New</a></li>
+               
+                <li class="dropdown-submenu"><a class="test">Save As <span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                            <li><a >NewTrade</a></li>
+                            <li><a >TemplateTrade</a></li>
+                        </ul>
+                </li>
+                
+                <li><a href="#">Save</a></li>
+                <li><a href="#">Delete</a></li>
+                <li class="dropdown-submenu"><a class="test">Reload  <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a >Latest</a></li>
+                            <li><a >History</a></li>
+                            <li><a >Templates</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">Approve</a></li>
+                <li><a href="#">Exit</a></li>
+                </ul>
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BusinessEvent <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  <li><a href="#">Bought Back</a></li>
+                  <li><a href="#">PartialBoughtBack</a></li>
+                  <li><a href="#">Mo Maintenance</a></li>
+                  <li><a href="#">Migration</a></li>
+                  <li><a href="#">Assignment</a></li>
+                  <li><a href="#">PartialAssignment</a></li>
+                  <li><a href="#">Allocation</a></li>
+                  </ul>
+
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Flow <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">Push To Mo</a></li>
+                    <li><a href="#">Push To Bo</a></li>
+                    <li><a href="#">Withdraw </a></li>
+                    <li class="dropdown-submenu"><a class="test">Email <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a >Trade Ticket</a></li>
+                                <li><a >End Ticket</a></li>
+                                <li><a >SendCashFlow</a></li>
+                                <li><a >SendRisk</a></li>
+                                <li><a >SendPV</a></li>
+                            </ul>
+                    </li>
+                    </ul>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Analytics <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                      <li><a href="#">Calculate PV</a></li>
+                      <li class="dropdown-submenu"><a class="test">CalculateRisk <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a >Delta</a></li>
+                                <li><a >Gamma</a></li>
+                                <li><a >Vega</a></li>
+                                <li><a >Theta</a></li>
+                        </ul>
+                    </li>
+                      <li><a href="#">Calculate PAA</a></li>
+                      <li><a href="#">CashFlowReport</a></li>
+                      </ul>
+                      
+                      <li class="box">
+                          &nbsp;
+                          <label style="color:honeydew;color:black">Market:</label>&nbsp;
+                          <select>
+                            <option>Live</option>
+                            <option>End Of Day</option>
+                            <option>Historic</option>
+                          </select>&nbsp;&nbsp;
+                          <label style="color:honeydew;color:black">Today:</label>&nbsp;
+                         <input type="date">
+                        </li>
+                    
+           </ul>
+           
+        </div>
+    </nav>
+  
+
+
+
+  <div class="container">
+ 
+    <div class="form-group col-sm-6">
+        <div class="form-group col-sm-12">
+            <label class="control-label" id="fname">Version</label>
+               <input type="text" class="form-control" id="fname" placeholder="">
+        </div>
+              <div class="clearfix"></div>
+
+        <div class="form-group col-sm-12">
+            <label class="control-label" id="fname">Product Class</label>
+            <select class="form-control">
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+        </div>
+        <div class="clearfix"></div>
+        <div class="form-group col-sm-12">
+          <label class="control-label" id="fname">Tenor</label>
+             <input type="text" class="form-control" id="fname" placeholder="">
+        </div>
+        <div class="clearfix"></div>
+        <div class="form-group col-sm-12">
+          <label class="control-label" id="fname">Effective Date</label>
+             <input type="date" class="form-control" id="fname" placeholder="">
+        </div>
+        <div class="form-group col-sm-12">
+            <label class="control-label" id="fname">Trader</label>
+            <select class="form-control">
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+          </div>
+          <div class="form-group col-sm-12">
+              <label class="control-label" id="fname">Firm Account</label>
+              <select class="form-control">
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+            </div>
+            <div class="form-group col-sm-12">
+                <label class="control-label" id="fname">Customer Account</label>
+                <select class="form-control">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+              </div>
+              <div class="form-group col-sm-12">
+                  <label class="control-label" id="fname">Broker Account</label>
+                  <select class="form-control">
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label class="control-label" id="fname">Legal Entity</label>
+                    <select class="form-control">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                  </div>
+                  <div class="form-group col-sm-12">
+                      <label class="control-label" id="fname">External System</label>
+                      <select class="form-control">
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label class="control-label" id="fname">External Ref</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                          </select>
+                      </div>
+                      <div class="form-group col-sm-12">
+                          <label class="control-label" id="fname">Sub Type</label>
+                          <select class="form-control">
+                              <option></option>
+                              <option></option>
+                              <option></option>
+                              <option></option>
+                            </select>
+                     </div>
+                     <div class="clearfix"></div>
+      </div>
+
+      <div class="container">
+      <div class="form-group col-sm-6">
+        
+        <div class="form-group col-sm-12">
+            <label class="control-label" id="fname">Location</label>
+            <select class="form-control">
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-group col-sm-12">
+             <label class="control-label" id="fname">Trade Date</label>
+                <input type="date" class="form-control" id="fname" placeholder="">
+           </div>
+           <div class="clearfix"></div>
+           <div class="form-group col-sm-12">
+               <label class="control-label" id="fname">Termination Date</label>
+                  <input type="date" class="form-control" id="fname" placeholder="">
+             </div>
+             <div class="clearfix"></div>
+             <div class="form-group col-sm-12">
+                 <label class="control-label" id="fname">Sales Person</label>
+                 <select class="form-control">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                   </select>
+               </div>
+               <div class="clearfix"></div>
+               <div class="form-group col-sm-12">
+                   <label class="control-label" id="fname">Trade Type</label>
+                   <select class="form-control">
+                       <option></option>
+                       <option></option>
+                       <option></option>
+                       <option></option>
+                     </select>
+                 </div>
+                 <div class="clearfix"></div>
+                 <div class="form-group col-sm-12">
+                     <label class="control-label" id="fname">Risk Party A</label>
+                     <select class="form-control">
+                         <option></option>
+                         <option></option>
+                         <option></option>
+                         <option></option>
+                       </select>
+                   </div>
+                   <div class="clearfix"></div>
+                   <div class="form-group col-sm-12">
+                       <label class="control-label" id="fname">Long Name</label>
+                          <input type="text" class="form-control" id="fname" placeholder="">
+                     </div>
+                     <div class="clearfix"></div>
+                     <div class="form-group col-sm-12">
+                         <label class="control-label" id="fname">Early Term Date</label>
+                            <input type="date" class="form-control" id="fname" placeholder="">
+                       </div>
+                       <div class="clearfix"></div>
+                 <div class="form-group col-sm-12">
+                     <label class="control-label" id="fname">Early Term Reason</label>
+                     <select class="form-control">
+                         <option></option>
+                         <option></option>
+                         <option></option>
+                         <option></option>
+                       </select>
+                   </div>
+                   <div class="clearfix"></div>
+                 <div class="form-group col-sm-12">
+                     <label class="control-label" id="fname">Mod Reason</label>
+                     <select class="form-control">
+                         <option></option>
+                         <option></option>
+                         <option></option>
+                         <option></option>
+                       </select>
+                   </div>
+                   
+                   <div class="clearfix"></div>
+                   <div class="form-group col-sm-12">
+                       <label for="exampleFormControlTextarea1">Comments</label>
+                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                   </div>   
+                  </div>
+                </div>              
+              <div class="clearfix"></div>
+              <br>
+              
+         
+<div class="col-sm-10">
+  <div class="sec">
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul type="none">
+              <li class="items">
+                  <a [routerLink]="['./fadditional']" routerLinkActive="active">AdditionalFields</a>
+                  <a [routerLink]="['./ffees']" routerLinkActive="active">Fees</a>
+                  <a [routerLink]="['./fsales']" routerLinkActive="active">Sales Credit</a>
+                  <a [routerLink]="['./fmargin']" routerLinkActive="active">Margin</a>
+                  <a [routerLink]="['./fassign']" routerLinkActive="active">Assignment</a>
+                  <a [routerLink]="['./fpartial']" routerLinkActive="active">PartialAssignment</a>
+              </li>
+            </ul>
+
+
+          </div>
+        </nav>
+  </div>
+ <br><br>
+</div>
+
+
+
+
+        </div>
+        <router-outlet></router-outlet>
+        </div>
+        
+
+
+ 
+ 
+
+
