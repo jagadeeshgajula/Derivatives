@@ -1,0 +1,100 @@
+<div class="row content-section">
+    <div class="borderclass">
+        <div class="col-sm-2" style="margin-top: 10px">
+                <div><label>UserName</label></div>
+            <div><label>LoginName</label></div>
+            <div><label>First Name</label></div>
+            <div><label>Last Name</label></div>
+            <div><label>Password</label></div>
+            <div><label>SwapDefault</label></div>
+            <div><label>SwoDefault</label></div>
+            <div><label>PVAutoCalc</label></div>
+            <div><label>Threshold PV</label></div>
+            <div><label>Business</label></div>
+            <div><label>LastModified</label></div>
+            <div><label>LastVerified</label></div>
+           
+        </div>
+        <div class="col-sm-4">
+                <div class="col-sm-9" name="UserName">
+                        <select class="form-control">
+                            <option selected *ngFor="let UserName of model.UserName">{{UserName}}</option>
+                        </select>
+                    </div>
+            <div class="col-sm-9"><input type="text" name="LoginName" class="form-control" ></div>
+            <div class="col-sm-9"><input type="text" name="FirstName" class="form-control" ></div>
+            <div class="col-sm-9"><input type="text" name="LastName" class="form-control" ></div>
+            <div class="col-sm-9"><input type="text" name="Password" class="form-control" ></div>
+            <div class="col-sm-9"> <input type="text" name="SwapDefault" class="form-control" ></div>
+            <div class="col-sm-9"> <input type="text" name="SWODefault" class="form-control"  ></div>
+            <div class="col-sm-9" name="PVAutoCalc">
+                <select class="form-control">
+                    <option selected *ngFor="let PVAutoCalc of model.PVAutoCalc">{{PVAutoCalc}}</option>
+                </select>
+            </div>
+            <div class="col-sm-9"><input type="text" name="Threshold PV" class="form-control" ></div>
+            <div class="col-sm-9" name="Business">
+                <select class="form-control">
+                    <option>{{model.Business}}</option>
+                </select>
+            </div>
+            <div class="col-sm-9"><input type="date" class="form-control"><!-- <input type="text" name="LastModified" class="form-control"  value={{model.txtLastModified}}> --></div>
+            <div class="col-sm-9"> <input type="date" class="form-control"><!-- <input type="text" name="LastVerified" class="form-control"  value={{model.txtLastVerified}}> --></div>
+        </div>
+       
+        <div class="vl"></div>
+    
+        <div class="col-sm-2" style="margin-top: 10px"> 
+            <div><label>Access Type</label></div>
+            <div><label>Status</label></div>
+            <div><label>Role</label></div>
+            <div><label>Domain</label></div>
+            <div><label>FraDefault</label></div>
+            <div><label>CapFloorDefault</label></div>
+            <div><label>Administrator</label></div>
+            <div><label>Department</label></div>
+            <div><label>LastModifiedBy</label></div>
+            <div><label>LastVerifiedBy</label></div>
+        </div>
+        <div class="col-sm-4">
+            <div class="col-sm-9" name="Access Type">
+                    <select class="form-control">
+                        <option selected *ngFor="let AccessType of model.AccessType">{{AccessType}}</option>
+                    </select>
+            </div>
+            <div class="col-sm-9"><input type="text" name="Status" class="form-control" ></div>
+            <div class="col-sm-9" name="Role">
+                    <select class="form-control">
+                        <option>{{model.Role}}</option>
+                    </select>
+            </div>
+            <div class="col-sm-9" name="Domain">
+                    <select class="form-control">
+                        <option *ngFor="let domain of model.Domain">{{domain}}</option>
+                    </select>
+            </div>
+            <div class="col-sm-9"> <input type="text" name="FraDefault" class="form-control" ></div>
+            <div class="col-sm-9"> <input type="text" name="CapFloorDefault" class="form-control"  ></div>
+            <div class="col-sm-9" name="Administrator">
+                    <select class="form-control">
+                            <option *ngFor="let Administrator of model.Administrator">{{Administrator}}</option>
+                    </select>
+            </div>
+            <div class="col-sm-9" name="Department">
+                    <select class="form-control">
+                            <option *ngFor="let Department of model.Department">{{Department}}</option>
+                    </select>
+            </div>
+            <div class="col-sm-9"><input type="text" name="LastModifiedBy" class="form-control" ></div>
+            <div class="col-sm-9"><input type="text" name="LastVerifiedBy" class="form-control" ></div>
+        </div>          
+        <div class="col-sm-12"> <br>
+            <div class=" col-sm-6 text-right"><div class=" col-sm-8"></div><button type="button" class="btn btn-primary col-sm-2">Save</button></div>
+            <div class=" col-sm-6 text-left"><div class=" col-sm-1"></div><button type="button" class="btn btn-primary col-sm-2">Cancel</button></div>
+            </div>
+         
+        </div>
+    </div>
+        <router-outlet></router-outlet>
+    
+    
