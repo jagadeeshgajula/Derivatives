@@ -1,0 +1,167 @@
+<div class="row content-section">
+        <div class="col-sm-2"><br>
+                <div><label>Login Name</label> </div><br><br>
+                <div><label>First Name</label></div><br><br><br>
+                <div><label>Business</label></div><br><br><br>
+                <div><label>Last Modified</label></div><br><br><br><br>
+
+        </div>
+        <div class="col-sm-2">
+                <div name="Login Name">
+                        <select class="form-control">
+                                <option>{{model.txtLoginName}}</option>
+                        </select></div><br><br>
+                <div><input type="text" class="form-control" name="FirstName" value={{model.txtFirstName}}></div><br><br>
+                <div  name="Business"><select class="form-control">
+                                <option>{{model.cmbBusiness}}</option>
+                        </select></div><br><br>
+                <div><input type="date" class="form-control">
+                        <!-- <input type="text" class="form-control" name="Last Modified" value={{model.txtLastModified}}> --></div>
+                <br><br><br>
+        </div>
+
+        <div class="col-sm-2">
+                <br><br><br><br><br>
+                <div><label>Last Name</label> </div><br><br><br>
+                <div><label>Department</label></div><br><br>
+                <div><label>Last VerifiedBy</label></div>
+        </div>
+        <div class="col-sm-2">
+                <br><br><br><br>
+                <div><input type="text" name="Last Name" class="form-control" value={{model.txtLastName}}></div><br><br>
+                <div input name="Department"><select class="form-control">
+                                <option selected *ngFor="let department of model.cmbDepartment">{{department}}</option>
+                        </select></div><br><br>
+                <div><input type="text" name="Last VerifiedBy" class="form-control" value={{model.txtLastVerifiedBy}}></div>
+
+        </div>
+        <div class="col-sm-2">
+                <br><br><br><br><br>
+                <div><label>Role</label> </div><br><br>
+                <div><label>Last ModifiedBy</label></div><br><br><br>
+                <div><label>Last Verified</label></div>
+        </div>
+        <div class="col-sm-2">
+                <br><br><br><br>
+                <div> <select class="form-control">
+                                <option>{{model.cmbRole}}</option>
+                        </select></div><br><br>
+                <div><input type="text" name="Last ModifiedBy" class="form-control" value={{model.txtLastModifiedBy}}></div>
+                <br><br>
+                <div><input type="date" class="form-control">
+                        <!-- <input type="text" name="Last Verified" class="form-control" value={{model.txtLastVerified}}> --></div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="col-sm-2"><br><br><label>Current Access</label></div>
+        <div class="check1 col-sm-10">
+                <input type="checkbox"> ALL<br>
+
+
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+        <div class="col-sm-2"><br><br><br><button class="btn btn-primary">Add</button></div>
+        <div class="check2 col-sm-10">
+                <div class="one col-sm-2">
+                        <input type="checkbox"> ALL<br>
+                        <input type="checkbox"> IRDAFALE<br>
+                        <input type="checkbox"> IRDAMDLE<br>
+                        <input type="checkbox">IRDAOKLE<br>
+                        <input type="checkbox"> IRDBYRLE<br>
+                        <input type="checkbox"> IRDCHFLE<br>
+                        <input type="checkbox"> IRDDEMLE<br>
+                        <input type="checkbox"> IRDDZDLE<br>
+                        <input type="checkbox">IRDECSLE <br>
+                        <input type="checkbox"> IRDEGPLE<br>
+                        <input type="checkbox">IRDETBLE <br>
+                        <input type="checkbox"> IRDEURLE<br>
+
+
+
+                </div>
+                <div class="two col-sm-2">
+                        <input type="checkbox"> IRDEURLE<br>
+                        <input type="checkbox">IRDEURLE <br>
+                        <input type="checkbox"> IRDGELLE<br>
+                        <input type="checkbox"> IRDGMDLE<br>
+                        <input type="checkbox"> IRDGNFLE<br>
+                        <input type="checkbox">IRDHKDLE <br>
+                        <input type="checkbox">IRDINRLE <br>
+                        <input type="checkbox">IRDKESLE <br>
+                        <input type="checkbox">IRDLKRLE <br>
+                        <input type="checkbox">IRDMADLE <br>
+                        <input type="checkbox"> IRDMNTLE<br>
+                        <input type="checkbox"> IRDMTLLE<br>
+
+
+                </div>
+                <div class="three col-sm-2">
+                        <input type="checkbox"> IRDMURLE<br>
+                        <input type="checkbox"> IRDMWKLE<br>
+                        <input type="checkbox">IRDMXPLE <br>
+                        <input type="checkbox">IRDMYRLE <br>
+                        <input type="checkbox">IRDMYRLE <br>
+                        <input type="checkbox">IRDMZMLE <br>
+                        <input type="checkbox">IRDNADLE <br>
+                        <input type="checkbox">IRDNGNLE <br>
+
+                        <input type="checkbox">IRDNGNLE <br>
+                        <input type="checkbox"> IRDNIOLE<br>
+                        <input type="checkbox">IRDNOKLE <br>
+                        <input type="checkbox">IRDNPRLE <br>
+
+
+                </div>
+                <div class="four col-sm-2">
+                        <input type="checkbox">IRDNZDLE <br>
+                        <input type="checkbox">IRDPENLE <br>
+
+                        <input type="checkbox"> IRDPHPLE<br>
+                        <input type="checkbox"> IRDPKRLE<br>
+                        <input type="checkbox"> IRDPLZLE<br>
+                        <input type="checkbox">IRDPYGLE <br>
+                        <input type="checkbox"> IRDQARLE<br>
+                        <input type="checkbox">IRDROLLLE <br>
+                        <input type="checkbox"> IRDRTLLE<br>
+                        <input type="checkbox">IRDRWFLE <br>
+                        <input type="checkbox">IRDSDDLE <br>
+                        <input type="checkbox">IRDSEKLE <br>
+
+
+
+                </div>
+                <div class="five col-sm-2">
+                        <input type="checkbox">IRDSGDLE <br>
+                        <input type="checkbox"> IRDSRGLE<br>
+                        <input type="checkbox"> IRDSZLLE<br>
+                        <input type="checkbox">IRDTHBLE <br>
+                        <input type="checkbox"> IRDTJRLE<br>
+                        <input type="checkbox">IRDTNDLE <br>
+                        <input type="checkbox"> IRDTOPLE<br>
+                        <input type="checkbox">IRDTZSLE <br>
+                        <input type="checkbox"> IRDUAHLE<br>
+
+
+                        <input type="checkbox">IRDUKLE <br>
+                        <input type="checkbox">IRDUSDLE <br>
+                        <input type="checkbox">IRDUZSLE <br>
+
+                </div>
+                <div class="six col-sm-2">
+                        <input type="checkbox"> IRDVUVLE<br>
+                        <input type="checkbox"> IRDXOFLE<br>
+                        <input type="checkbox">IRDXOFLE <br>
+                        <input type="checkbox">IRDXOFLE <br>
+
+                        <input type="checkbox"> IRDYERLE<br>
+                        <input type="checkbox"> IRDZARLE<br>
+                        <input type="checkbox">IRDZMKLE <br>
+                        <input type="checkbox"> IRDZWDLE<br>
+                </div>
+        </div>
+</div>
+
+
+
+<router-outlet></router-outlet>

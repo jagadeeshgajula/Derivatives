@@ -1,0 +1,230 @@
+
+<div class="form-group" style="border: 2px solid whitesmoke; 
+width:1140px;margin-left:-11px;height: 600px;">
+<div *ngIf="model">
+   <div class="fields">
+    <div class="row">
+        <div class="row">
+       <div [ngClass]="['form-group']" >
+          
+          <label class="control-label col-sm-3 contorl-align-label contorl-align-text">GearFactor/Spread</label>
+            <div class="col-sm-5">
+        <div class="col-sm-4"> 
+          <input class="form-control" type="text" value={{model.txtGearFactor}} [ngStyle]="{'margin-left.px':'-16'}">
+        </div>
+        <div class="col-sm-5">
+            <input type="text" value={{model.txtSpread}} class="form-control" [ngStyle]="{'margin-left.px':'-18'}"/>
+        </div>
+        </div>
+       </div>
+      </div>
+
+      <div class="row">
+          <div [ngClass]="['form-group']" >
+             
+             <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >QuoteCalendars/Lag
+               </label>
+               
+           <div class="col-sm-6">
+             <div class="form-inline">
+               
+             <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                 <option *ngFor="let qcal of model.cntQuoteCalenders">{{qcal}}</option>
+                
+               </select>
+              
+             <input type="text" value={{model.txtQuoteLag}} class="form-control  col-sm-3"
+              [ngStyle]="{'margin-left.px':'16'}">
+           </div>
+           </div>
+          </div>
+         </div>
+
+
+         <div class="row">
+           
+            <div [ngClass]="['form-group']">
+               
+               <label class="control-label col-sm-3 contorl-align-label">InitialQuoteCalendars/Date/Lag </label>
+                 
+               <div class="col-sm-5"> 
+                  <div class="col-sm-4">
+                      <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+                          <option *ngFor="let inqcal of model.cntInitialQuoteCalenders">{{inqcal}}</option>
+                          </select>
+  
+                 </div>
+                 <div class="col-sm-4" >
+                    <input type="text" value={{model.txtInitialQuoteDate}} class="form-control" [ngStyle]="{'margin-left.px':'-16'}"  bsDatepicker  [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' }" >
+                    
+               </div>        
+               <div class="col-sm-2">
+                  <input type="text" value={{model.txtInitialQuoteLag}} class="form-control" [ngStyle]="{'margin-left.px':'-10'}" >
+               </div>
+              </div>
+              </div>
+              </div>
+
+
+              <div class="row">
+                
+                  <div [ngClass]="['form-group']">
+                     
+                     <label class="control-label col-sm-3 contorl-align-label">ResetAveraging/Convention/Freq</label>
+                       
+                     <div class="col-sm-5"> 
+                        <div class="col-sm-5">
+                            <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+                                <option *ngFor="let resavg of model.cmbResetAveraging">{{resavg}}</option>
+                                </select>
+        
+                       </div>
+                       <div class="col-sm-4" >
+                          <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+                              <option *ngFor="let resconv of model.cmbResetConvention">{{resconv}}</option>
+                              </select>
+                          
+                     </div>        
+                     <div class="col-sm-3">
+                        <select class="form-control" [ngStyle]="{'margin-left.px':'-12'}">
+                            <option *ngFor="let resfreq of model.cmbResetFreq">{{resfreq}}</option>
+                            </select>
+                     </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+
+
+       <div class="row">
+          <div [ngClass]="['form-group']" >
+            
+             <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                Reset Type/ScheduleCustomFlag</label>
+               
+           <div class="col-sm-6">
+             <div class="form-inline">
+               
+             <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                 <option *ngFor="let restype of model.cmbResetType">{{restype}}</option>
+                
+               </select>
+              
+               <select class="form-control col-sm-3" [ngStyle]="{'margin-left.px':'16'}">
+                  <option *ngFor="let schflag of model.cmbScheduleCustomFlag">{{schflag}}</option>
+                 
+                </select>
+           </div>
+           </div>
+          </div>
+         </div>
+  
+
+         <div class="row">
+            <div [ngClass]="['form-group']" >
+              
+               <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                  Strike/VolId </label>
+                 
+             <div class="col-sm-6">
+               <div class="form-inline">
+                 
+                  <input type="text" value={{model.txtStrike}} class="form-control" >
+                <input type="text" value={{model.txtValid}} class="form-control" [ngStyle]="{'margin-left.px':'16'}" >
+             </div>
+             </div>
+            </div>
+           </div>
+    
+
+      
+
+           <div class="row">
+              <div [ngClass]="['form-group']" >
+                 
+                 <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                   PricingMethod</label>
+                   
+               <div class="col-sm-3">
+                  
+                  <input class="form-control" value={{model.txtPricingMethod}}>
+                  
+            
+               </div>
+              </div>
+             </div>
+
+
+
+             
+           <div class="row">
+              <div [ngClass]="['form-group']" >
+                
+                 <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                    MarketIndex</label>
+                   
+               <div class="col-sm-3">
+                  
+                  <select class="form-control">
+                      <option *ngFor="let market of model.cmbMarketIndex">{{market}}</option>
+                      
+                    </select>
+                  
+            
+               </div>
+              </div>
+             </div>
+
+  <br>
+ <!--  <div class="col-sm-8 text-right">
+  <div class="text-center">
+    <button><a [routerLink]="['./schedules']" routerLinkActive="active">SCHEDULE </a></button>
+    </div>
+    </div>
+             <div class="row">
+               
+                <br><br>
+               <div [ngClass]="['form-group']" >
+                 
+                  <label class="control-label col-sm-3 contorl-align-label contorl-align-text">PV/Currency</label>
+                    <div class="col-sm-5">
+                <div class="col-sm-7"> 
+                   <input class="form-control" type="text">
+                   <input class="form-control" type="text"  value={{model.txtPV}} [ngStyle]="{'margin-left.px':'-16'}"> -
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control col-sm-4" [ngStyle]="{'margin-left.px':'-19'}">
+                      <option>{{model.cmbPVCurrency}}</option>
+                    </select>
+                </div>
+              </div>
+                  </div>
+                  </div>
+      
+      
+              <div class="row">
+                  
+                 <div [ngClass]="['form-group']" >
+                    <br>
+                    <label class="control-label col-sm-3 contorl-align-label contorl-align-text">Parallel Delta/Curve</label>
+                      <div class="col-sm-5">
+                  <div class="col-sm-5"> 
+                     <input class="form-control" type="text">
+                     <input class="form-control" type="text" value={{model.txtRecParallelDelta}} [ngStyle]="{'margin-left.px':'-16'}"> 
+                  </div>
+                  <div class="col-sm-4">
+                      <select class="form-control " [ngStyle]="{'margin-left.px':'-19'}" >
+                        <option>{{model.cmbCurvePnl}}</option>
+                      </select>
+                  </div>
+                  </div>
+                 
+                </div>
+
+
+    </div> -->
+</div>
+</div>
+
+
+

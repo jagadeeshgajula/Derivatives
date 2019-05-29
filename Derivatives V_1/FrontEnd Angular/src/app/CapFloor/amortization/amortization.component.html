@@ -1,0 +1,171 @@
+
+<div class="form-group" style="border: 2px solid whitesmoke; 
+width:1140px;margin-left:-11px;height: 500px;">
+<div *ngIf="model">
+    <div class="fields">
+    <div class="row">
+        <div class="row">
+       <div [ngClass]="['form-group']" >
+          
+          <label class="control-label col-sm-3 contorl-align-label contorl-align-text">Amort Type</label>
+            <div class="col-sm-5">
+        <div class="col-sm-4"> 
+         <select class="form-control" [ngStyle]="{'margin-left.px':'-16'}">
+            <option *ngFor="let amttype of model.cmbAmortType">{{amttype}}</option>
+         </select>  
+        </div>
+        
+        </div>
+       </div>
+      </div>
+
+
+      <div class="row">
+          <div [ngClass]="['form-group']">
+             
+             <label class="control-label col-sm-3 contorl-align-label">AmortStartDate/EndDate</label>
+               
+           <div class="col-sm-8">
+             <div class="form-inline">
+                <input type="text" value={{model.txtAmortStartDate}} class="form-control" bsDatepicker  [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' }">
+          
+                 <input type="text" value={{model.txtAmortEndDate}} class="form-control" [ngStyle]="{'margin-left.px':'18'}" bsDatepicker  [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' }">
+           </div>
+           </div>
+          </div>
+       
+      </div>
+
+
+      <div class="row">
+          <div [ngClass]="['form-group']" >
+            
+             <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                AmortBusDay/Calendars </label>
+               
+           <div class="col-sm-8">
+             <div class="form-inline">
+               
+             <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                 <option *ngFor="let amtbus of model.cmbAmortBusDay">{{amtbus}}</option>
+                 
+               </select>
+              
+               <select class="form-control col-sm-4" [ngStyle]="{'margin-left.px':'16'}">
+                  <option *ngFor="let amtcal of model.cntAmortCalendars">{{amtcal}}</option>
+               
+                </select>
+           </div>
+           </div>
+          </div>
+         </div>
+
+
+         <div class="row">
+            <div [ngClass]="['form-group']" >
+              
+               <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                  AmortFreq/Marching </label>
+                 
+             <div class="col-sm-8">
+               <div class="form-inline">
+                 
+               <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                   <option *ngFor="let amtfreq of model.cmbAmortFreq">{{amtfreq}}</option>
+                   
+                 </select>
+                
+                 <select class="form-control col-sm-4" [ngStyle]="{'margin-left.px':'16'}">
+                    <option *ngFor="let amtmarch of model.cmbAmortMarching">{{amtmarch}}</option>
+                  </select>
+             </div>
+             </div>
+            </div>
+           </div>
+
+
+           <div class="row">
+              <div [ngClass]="['form-group']" >
+                
+                 <label class="control-label col-sm-3 contorl-align-label contorl-align-text " >
+                    AmortRollDay/RollWeek </label>
+                   
+               <div class="col-sm-8">
+                 <div class="form-inline">
+                   
+                 <select class="form-control col-sm-3" [ngStyle]="{'width.px':'163'}">
+                     <option *ngFor="let rollday of model.cmbAmortRollDay">{{rollday}}</option>
+                     
+                   </select>
+                  
+                   <select class="form-control col-sm-6" [ngStyle]="{'margin-left.px':'16'}">
+                      <option *ngFor="let rollweek of model.cmbAmortRollWeek">{{rollweek}}</option>
+                    </select>
+               </div>
+               </div>
+              </div>
+             </div>
+
+             <div class="row">
+                <div [ngClass]="['form-group']">
+                   
+                   <label class="control-label col-sm-3 contorl-align-label">AmortAmount</label>
+                     
+                 <div class="col-sm-2">
+                   
+                  <input type="text" class="form-control" value={{model.txtAmortAmount}}>
+                  
+                 </div>
+                </div>
+            </div>
+
+               
+        <!--     <br>
+            <div class="col-sm-8 text-right">
+            <div class="text-center">
+              <button><a [routerLink]="['./schedules']" routerLinkActive="active">SCHEDULE </a></button>
+            </div>
+          </div>
+       </div>   -->        
+          
+          <!--   <div class="row">
+               <div [ngClass]="['form-group']" >
+                  <br>
+                  <label class="control-label col-sm-3 contorl-align-label contorl-align-text">PV/Currency</label>
+                    <div class="col-sm-5">
+                <div class="col-sm-7"> 
+                  <input type="text" class="form-control">
+                   <input class="form-control" type="text"  value={{model.txtPV}} [ngStyle]="{'margin-left.px':'-16'}"> 
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control col-sm-4" [ngStyle]="{'margin-left.px':'-19'}">
+                      <option>{{model.cmbPVCurrency}}</option>
+                    </select>
+                </div>
+              </div>
+                  </div>
+                  </div> -->
+
+
+             <!--  <div class="row">
+                  
+                 <div [ngClass]="['form-group']" >
+                    <br>
+                    <label class="control-label col-sm-3 contorl-align-label contorl-align-text">Parallel Delta/Curve</label>
+                      <div class="col-sm-5">
+                  <div class="col-sm-5"> 
+                    <input class="form-control" type="text">
+                     <input class="form-control" type="text" value={{model.txtRecParallelDelta}} [ngStyle]="{'margin-left.px':'-16'}"> 
+                  </div>
+                  <div class="col-sm-4">
+                      <select class="form-control " [ngStyle]="{'margin-left.px':'-19'}" >
+                        <option>{{model.cmbCurvePnl}}</option>
+                      </select>
+                  </div>
+                  </div>
+                 
+                </div>
+
+           </div> -->
+</div>
+</div>

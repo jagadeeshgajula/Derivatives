@@ -1,0 +1,11 @@
+.navbar{
+    margin-left:-60px;
+    border:none;
+    border-radius:0px;
+}
+.navbar[_ngcontent-c1]{margin-left: -50px}
+.navbar .navbar-inverse{margin:-20px}
+.navbar-nav li{padding-left:10px}
+.form-control{ border-radius:0px;size: 0px}
+.content{margin-top:10px;margin-left: 20px}
+.left-nav{height: 250vh;}
