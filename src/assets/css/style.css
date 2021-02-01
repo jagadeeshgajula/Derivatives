@@ -1,0 +1,904 @@
+.ng-bg{
+    /* background-color: #17a2b8; */ 
+    background-color: #1787b8;
+    height: 95px;
+}
+/* .navbar{
+    padding: 1.0rem 1rem !important;
+} */
+.navbar-dark .navbar-brand {
+    color: #fff;
+    position: relative;
+    
+}
+.logo-subtitle{
+    position: relative;
+    top: -13px;
+    font-size: 16px;
+    color: #68cfe0;
+}
+.navbar-brand{
+    font-size: 1.5rem !important;
+}
+body{
+    background-color: #fff !important;
+}
+/* .container{
+    max-width: 1380px !important;
+} */
+.fa-cogs:before {
+    content: "\f085";
+    padding-left: -7px;
+    position: relative;
+    left: -8px;
+}
+
+.file:before{
+    content: "\f085";
+    padding-left: -7px;
+    position: relative;
+    left: -7px; 
+}
+.searching:before{
+    content: "\f085";
+    padding-left: -7px;
+    position: relative;
+    left: -8px;   
+}
+
+.fa.fa-user-circle-o:before {
+    content: "\f2bd";
+    position: relative;
+    left: -8px;
+}
+.fa.fa-code:before {
+     
+    position: relative;
+    left: -8px;
+}
+ 
+.fa.fa-sign-out:before {
+    content: "\f2f5";
+    position: relative;
+    left: -8px;
+}
+
+.fa-users:before {
+    content: "\f0c0";
+    position: relative;
+    left: -8px;
+}
+.btn-outline-secondary{
+    background-color: #68cfe0 !important;
+    color:#fff !important;
+    border-color:#68cfe0 !important ;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2030 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+   /*  padding-right: 0.9rem !important; */
+    padding-left: 0.5rem; 
+}
+.nav-link-left{
+    position: relative;
+    left:10px;
+}
+.Dc-img-home{
+    width: 550px !important;
+    height: 530px !important;
+    margin-top: -16px;
+}
+.Hire-Talent{
+    
+   /*  font-family: serif; */
+    font-size: 50px !important;
+   /*  color: #fff !important; */
+    /* margin-left: 100px; */
+    text-align: 0 -webkit-auto;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-top: 180px;
+}
+.with-easa{
+    text-align: left !important;
+    font-size: 50px;
+    
+}
+.with-easa-h1{
+    font-size: 50px;
+    white-space: nowrap;
+}
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+    background-color: #f5faff;
+    color: #333;
+    font-weight: 700 !important;
+    z-index: 1067;
+}
+.fa-quote-left:before {
+    content: "\f10d";
+    font-size: 18px;
+    position: relative;
+    top: -28px;
+}
+.fa-quote-right:before {
+    content: "\f10e";
+    position: relative;
+    top: -28px;
+    font-size: 18px;
+}
+.button-style{
+    background-image: linear-gradient(to right, #449ada 0%, #3ec1dd 51%, #449ada 100%);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+    height: 70px;
+}
+.button-style-sec{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: transparent !important;
+    border: 1px solid #fff;
+    white-space: nowrap !important;
+    margin-left: 100px;
+    width: 250px;
+    height: 70px;
+}
+.form-control-bg{
+    background-color: transparent !important;
+}
+.fa-search-css{
+    position: relative;
+    left: -24px;
+    top: 10px;
+    color:#fff !important;
+    font-size:18px;
+}
+.form-controlbg{
+    height:43px !important;
+}
+.fa-searchcss{
+    position: relative;
+    left: -34px;
+    top: -1px;
+    color:#fff !important;
+    font-size:18px;
+}
+.Dc-img-singup{
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.singup-page{
+    text-align: center;
+    color: #fff !important;
+    margin-top: 50px;
+}
+.input-group.input-group-new {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto !important;
+}
+.width-easa-Virtual{
+    font-size: 35px !important;
+}
+.with-easa-virtual-one{
+    font-size:25px !important;
+    color : black
+}
+.singup-page-txt{
+    text-align: center;
+    display: block !important;
+}
+.button-position-top{
+    margin-top:50px !important;
+}
+.button-Employer{
+    background-color:#e6912c !important;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+    height: 70px;
+}
+.button-Job-Seeker:hover{
+    background-color:#e6912c !important;
+}
+.button-Job-Seeker{
+   /*  background-image: linear-gradient(to right, #449ada 0%, #3ec1dd 51%, #449ada 100%); */
+   background-color: #449ada !important;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+    height: 70px;
+    margin-left: 88px;
+}
+.button-freelancer{
+    background-color:#e6912c !important;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+    height: 70px;
+    margin-left: 101px;
+}
+.bg-color-sm{
+    background-image: linear-gradient(to right, #449ada 0%, #3ec1dd 51%, #449ada 100%);
+}
+/* .Get-Started-block{
+    padding: 20px;
+} */
+.h1-txt-color{
+    color: #fff !important;
+    text-align: center;
+    position: relative;
+    top: 26px;
+}
+.alg-txt-img{
+    /* width: 400px;
+    height: 300px; */
+    /* text-align: center; */
+    display: block;
+    margin: 0 auto;
+    width:650px;
+    margin-left: -102px;
+}
+.ng-select.select-height.ng-select-single .ng-select-container {
+    height: 45px !important;
+}
+.block-position-signup{
+    padding-top: 100px !important;
+}
+/* .container-new-style{
+    width:1000px !important;
+} */
+.bg-color-white{
+    background-color: #fff !important;
+    /* height: 580px; */
+    margin-top: -30px;
+    padding: 50px;
+    width: 450px;
+    border-radius: 4px;
+    position: absolute;
+    /* margin-left: -38px;*/
+}
+.form-control.formcontrol{
+    height: 45px !important;
+    border-radius: 0px !important;
+    border: 1px solid #ccc !important; 
+}
+.logo-dw{
+    text-align: center;
+    margin-top: -15px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.formcontrol-btn{
+    background-color: #1d2b57 !important;
+    color: #fff !important;
+}
+.signup-account{
+    text-align: center;
+}
+.eye-slash{
+    position: relative;
+    /* margin-top: 31px; */
+    float: right;
+    top: -29px;
+    left: -20px; 
+}
+.form-control.formcontrol:focus{
+    box-shadow: none !important;
+}
+.bg-color-white-login{
+    
+    background-color: #fff !important;
+    height: 580px;
+    margin-top: -30px;
+    padding: 50px;
+    width: 450px;
+    border-radius: 4px;
+    position: absolute;
+}
+.logo-dw-login{
+    text-align: center;
+    /* margin-top: 43px; */
+    padding: 10px;
+}
+::placeholder {
+    color:#c4c4c4 !important;
+   
+  }
+  .h1-txt-color-login{
+    color: #fff !important;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    top: 26px;
+  }
+  .a {
+    color: #3ec1dd !important;
+  };
+  .for-get-password {
+    display: flex !important;
+}
+.card-body.card-body-details {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 2.25rem;
+    /* height: 520px; */
+}
+.block-admin-signup {
+    padding-top: 10px !important;
+}
+.card-body.card-body-admin{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 2.0rem;
+   /*  height: 580px; */
+}
+.custom-control{
+    top: 5px !important;
+    padding: 2.25rem;
+/*     height: 580px; */
+}
+.navbar-brand-align{
+    text-align: center;
+    display: block !important;
+    position: relative;
+    top: 33px;
+}
+.forgotpassword{
+    color: #3ec1dd !important;
+    text-decoration: underline;
+    cursor: pointer;
+   /*  padding-top:5px !important; */
+}
+.logo-dw-forget{
+    text-align: center;
+    margin-top: 82px;
+    padding: 10px;
+}
+.custom-control-inline {
+    display: inline-flex;
+    margin-right: 1rem;
+    padding-left: 1.5rem;
+}
+.custom-control-inline {
+    margin-top: 7px;
+}
+
+.btn-color-cs{
+    background-color: #1d2b57 !important;
+    border: 1px solid #1d2b57 !important;
+}
+.fa-search:before {
+    content: "\f002";
+    font-size: 17px !important;
+    cursor: pointer;
+}
+.col-form-label {
+    font-weight: 500 !important;
+    font-size: 15px !important;
+}
+.slick-slider {
+    width: 90%;
+    margin: auto;
+    background: #000;
+    height:90%
+  }
+  
+  .nav-btn {
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 100px !important;
+  }
+  
+  .prev-slide.slick-disabled,
+  .next-slide.slick-disabled {
+    pointer-events: none;
+    opacity: 0.2;
+
+  }
+  
+  .prev-slide {
+   background-image: url('../../assets/images/slick-arrow.png') !important; 
+    left: -33px;
+    margin-top:150px
+  }
+  
+  .next-slide {
+     background-image: url('../../assets/images/slick-arrow.png') !important; 
+    right: -33px;
+    transform: rotate(180deg) !important;
+    margin-top:150px
+  }
+  
+  .prev-slide:hover {
+    background-position: 0px -53px;
+  }
+  .next-slide:hover {
+    background-position: -24px -53px;
+    transform: rotate(1deg) !important;
+}
+  
+  .next-slide:hover {
+    background-position: -24px -53px;
+  }
+  .slick-dots li.slick-active button:before{
+      color:#fff !important;
+  }
+   .code.ng-select.ng-select-single .ng-select-container {
+    height: 45px;
+  }
+  .codeData.ng-select.ng-select-single .ng-select-container {
+    height: 38px;
+  } 
+
+.country .ng-dropdown-panel{
+    width: auto !important; max-width: 200px;
+    }
+    
+    .country .ng-clear-wrapper {
+    cursor: pointer;
+    position: relative;
+    width: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    }
+    
+    .country .ng-arrow-wrapper {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    
+    }
+    .countriesSelect .ng-select-container {
+    color: #333;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    min-height: 36px;
+    align-items: center;
+    border-color: transparent;
+    }
+
+/* ------------------------------------------------------------------------------------------------------ */
+ /*   Munna Css */
+
+.btn-outline-white-primary {
+        color: #039c7c !important;;
+        background-color: #fff !important;;
+        background-image: none;
+        border-color: #039c7c !important;
+      /*   border: 2px solid;
+        border-radius: 0px;*/
+    
+    } 
+    
+    .btn-outline-white-primary:hover{
+        color: #fff !important;;
+        background-color: #039c7c !important;;
+        background-image: none;
+        border-color: #fff !important;;
+    }
+    
+    .btn-outline-white-secondary {
+        color: #17a2b8 !important;;
+        background-color: #fff !important;;
+        background-image: none;
+        border-color: #17a2b8 !important;
+    }
+    
+    .btn-outline-white-secondary:hover{
+        color: #fff !important;;
+        background-color: #17a2b8 !important;;
+        background-image: none;
+        border-color: #fff !important;;
+    }
+    
+    .custom.ng-select.ng-select-single .ng-select-container {
+        height: 36px;
+        border-style: none !important;
+        border-bottom-style: solid !important;
+        border-radius: 0px;
+        
+    }.custom.ng-select.ng-select-multiple .ng-select-container {
+        height: 36px;
+        border-style: none !important;
+        border-bottom-style: solid !important;
+        border-radius: 0px;
+    }
+    
+    ::placeholder,.ng-placeholder
+    {
+    font-weight: 700;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    border: 1px solid transparent;
+    text-transform: titlecase;
+    letter-spacing: 0.2em;
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0;
+    padding-left: 0px;
+    top: 0px;
+    } .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder {
+        top: 0px;
+        padding-bottom: 5px;
+        padding-left: 3px;
+    } 
+    
+    .ng-select .ng-select-container .ng-value-container .ng-placeholder {
+        color: #cecaca;
+        
+    }
+     button {
+        font-weight: 700 !important;
+        font-family: "Montserrat",Helvetica,Arial,sans-serif !important;
+        border: 2px solid transparent !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.2em !important;
+        padding: .375rem .75rem !important;
+        font-size: .875rem !important;
+        line-height: 1.5 !important;
+        border-radius: 0 !important;
+    } 
+    input[type="date"]::before { 
+        content: attr(data-placeholder);
+        width: 100%;
+        font-weight: 700;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    border: 1px solid transparent;
+    text-transform: titlecase;
+    letter-spacing: 0.2em;
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0;
+    padding-left: 0px;
+    top: 0px;
+    color: #cecaca;
+    }
+    
+    
+    input[type="date"]:focus::before,
+    input[type="date"]:valid::before { display: none } 
+    .code.ng-select.ng-select-single .ng-select-container {
+        height: 48px;
+    }.sort.ng-select.ng-select-single .ng-select-container {
+        height: 36px;
+        width: 162px;
+    }.page.ng-select.ng-select-single .ng-select-container {
+        height: 36px;
+        width: 80px;
+    }
+
+    /* ------------------------------------------------------------------------------ */
+    .ah-headline.type .ah-words-wrapper.selected{
+        background-color: transparent !important;
+        
+    }   
+    .ah-headline.type .ah-words-wrapper.selected b{
+        color:#fff !important;
+    }
+    .ah-headline.clip .ah-words-wrapper::after{
+       
+            content: '';
+            position: absolute;
+            top: 6px;
+            right: 0;
+            width: 2px;
+            height: 80%;
+            background-color: #fff !important;
+    }
+  
+    .btn-outline-blue-primary {
+        margin:4px;
+        border-radius: 6px !important;
+        border-radius: 1px;
+        background-color: #fff !important;;
+        background-image: none;
+        border :2px solid #72bcd4 !important;
+    }
+    body.ov-hidden {
+        overflow: hidden !important;
+    }
+    .country.ng-select-focused .ng-select-container {
+        background-color: transparent;
+        border-style:none;
+        border-color: transparent;
+    }
+  /*----------------------------------------------------*/
+
+  .signup-account-seeker{
+    margin-left: 88px;
+    margin-top:25px
+}
+
+.sign-up {
+    width: 100% !important;
+    height: 45px !important;
+    font-weight: 700 !important;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif ;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 27px !important;
+}
+
+.bg-layout{
+    height: 625px;
+   /*  background-color: #72bcd4 !important; */
+  }
+
+  .first-class{
+    background-color: #17a2b8 !important;
+    height: 625px !important;
+    margin-top: -10px !important;
+   }
+   
+   .hyper-nav-link{
+       color:black
+   }
+   .drop.ng-select.ng-select-single .ng-select-container {
+    background-color: transparent !important;
+    border-radius: 27px !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+    height: 44px;
+  }
+  .drop.ng-select .ng-select-container .ng-value-container .ng-placeholder {
+    color: #ccc;
+} 
+
+ 
+.drop.ng-select .ng-arrow-wrapper .ng-arrow{
+    border-color: #fff transparent transparent !important;
+}
+.customCheckO.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff !important;
+    border-color: #039c7c !important;
+    background-color: #039c7c !important;
+}
+.drop .ng-dropdown-panel .scroll-host {
+    border-radius: 20px !important;
+  
+}
+.drop .ng-dropdown-panel.ng-select-bottom {
+    border-radius: 20px !important;
+}
+
+  
+.msg-history {
+    height: calc(100vh - 240px);
+    overflow-y: auto; }
+
+.sent-msg p {
+    background: #98db92 none repeat scroll 0 0;
+    border-radius: 3px;
+    font-size: 13px;
+    margin: 0;
+    color: black;
+    padding: 5px 10px 5px 12px;
+    width: 100%; }
+
+    .sent-msg {
+    float: right;
+    width: 46%; }
+
+    .outgoing-msg {
+    overflow: hidden;
+    margin: 26px 0 26px; }
+
+    .time-date {
+    color: #fff;
+    display: block;
+    font-size: 12px;
+     margin: 8px 0 0; }
+
+    .incoming-msg-img {
+     display: inline-block;
+     width: 6%; }
+
+    .img-fluid {
+    max-width: 100%;
+    height: auto; }
+
+    .received-msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%; }
+          
+    .received-withd-msg p {
+     background: #ebebeb none repeat scroll 0 0;
+     border-radius: 3px;
+     color: black;
+    font-size: 13px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%; }
+
+    .received-withd-msg {
+    width: 57%; }
+
+    .jobRows:nth-of-type(n){
+        background-color:  rgba(0, 0, 0, 0.05);;
+      }
+      
+      .jobRows:nth-of-type(2n){
+        background-color: #ffffff;
+      }
+  .pointer{
+      cursor:pointer
+  }
+  .ngx-pagination li {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    /* margin-right: 0.0625rem; */
+    border-radius: 0;
+    border: 1px solid #ddd !important;
+    margin-right: 0px !important;
+}
+.borderless.ng-select .ng-select-container {
+ 
+    border: none;;
+}
+.borderless.form-control {
+ 
+    border: 0px solid #ced4da;
+
+}.form-control.borderless::placeholder,.borderless .ng-placeholder
+{
+     font-weight: 50; 
+     font-family: "Montserrat",Helvetica,Arial,sans-serif; 
+     border: 0px solid transparent; 
+    text-transform: titlecase;
+    letter-spacing: 0rem;
+    padding: .375rem .75rem;
+    font-size: .86rem;
+     line-height: 1.5; 
+     border-radius: 0; 
+    padding-left: 0px;
+     top: 0px;
+     color: #212529 !important;
+} 
+.borderless .ng-select .ng-select-container .ng-value-container .ng-placeholder {
+  color: #212529 !important;
+  
+}
+.dc-logo-main{
+   /*  height: 60px !important; */
+    cursor: pointer;
+}
+/* ----------------------------------------------------------------------------------------- */
+.titleDrop .ng-dropdown-panel{
+    width: auto !important; max-width: 200px;
+    }
+    
+  /*   .titleDrop .ng-clear-wrapper {
+    cursor: pointer;
+    position: relative;
+    width: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    }
+     */
+    .titleDrop .ng-arrow-wrapper {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    
+    }
+    .titleDrop .ng-select-container {
+    color: #333;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 0px solid #ccc;
+    min-height: 36px;
+    align-items: center;
+    border-color: transparent;
+    }.titleDrop.ng-select.ng-select-single .ng-select-container {
+        height: 36px;
+        width: 30px;
+    }
+    .drop-status.ng-select {
+        display: inline-block !important;
+    }
+    .titleDrop.ng-select.ng-select-opened>.ng-select-container {
+        background: transparent;
+        border-color: transparent;
+    }
+    .cc-date .cal-month-view .cal-day-cell {
+        min-height: 30px !important;
+    }
+   
+    .cc-date .cal-cell-row .ng-star-inserted{
+        height: /* 24px */ 40px !important;
+        font-size: 10px;
+    }
+    .cc-date .cal-cell-row .ng-star-inserted :focus {
+        height: 24px !important;
+        font-size: 10px;
+        border: 1px solid green;
+    }
+    .cc-date .cal-month-view .cal-day-number {
+        font-size: 1.2em;
+        font-weight: 400;
+        opacity: 0.5;
+        margin-top: 15px;
+        margin-right: 15px;
+        float: right;
+        margin-bottom: 10px;
+        margin-top: 1px;
+    }
+    .cc-date .cal-month-view .cal-day-cell.cal-today .cal-day-number {
+        font-size: 1.9em;
+        margin-top: -4px;
+    }
+
+    .cc-date .cal-month-view .cal-cell-top {
+        min-height: 24px !important;
+        flex: 1;
+    }

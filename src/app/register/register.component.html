@@ -1,0 +1,19 @@
+<div clas="container">
+   <label>Username</label><input type="text" [(ngModel)]="username" name="username" value="username" required>
+   <label>Password</label><input type="password" [(ngModel)]="password" name="password" value="password" required>
+   <label>Courses</label><select>
+                       <option>BSC</option>
+                       <option>B com</option>
+                       <option>BCA</option>
+                       <option>MCA</option>
+                       <option>MBA</option>
+                       <option>others</option>
+                       </select>
+   <label>city</label><input type="text" [(ngModel)]="city" name="city" value="city">
+   <label>State</label><input type="text" [(ngModel)]="state" name="state" value="state">
+   <label>Country</label><input type="text" [(ngModel)]="country" name="country" value="country">
+          
+    <button type="button" (click)="registerUser()" class="btn btn-primary float-right">Register</button>
+    
+    <button type="button" (click)="cancel()" class="btn btn-primary float-right">Cancel</button>
+  </div>
